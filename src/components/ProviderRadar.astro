@@ -1,0 +1,26 @@
+---
+import { getProviderRadar } from "@/lib/data";
+
+const entries = getProviderRadar();
+---
+
+<div class="provider-radar">
+  {entries.map((entry) => (
+    <article class="provider-radar__card">
+      <div>
+        <p>{entry.entity.displayName}</p>
+        <small>{entry.entity.category}</small>
+      </div>
+      <dl>
+        <div>
+          <dt>7d</dt>
+          <dd>{entry.last7}</dd>
+        </div>
+        <div>
+          <dt>30d</dt>
+          <dd>{entry.last30}</dd>
+        </div>
+      </dl>
+    </article>
+  ))}
+</div>

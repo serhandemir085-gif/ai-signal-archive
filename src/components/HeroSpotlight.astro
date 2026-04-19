@@ -1,0 +1,41 @@
+---
+import UpdateCard from "@/components/UpdateCard.astro";
+import { withBase } from "@/lib/site";
+import type { Update } from "@/lib/types";
+
+interface Props {
+  featured: Update[];
+}
+
+const { featured } = Astro.props;
+const primary = featured[0];
+const supporting = featured.slice(1, 3);
+---
+
+{primary && (
+  <section class="hero-spotlight shell">
+    <div class="hero-spotlight__lead">
+      <p class="hero-spotlight__eyebrow">What changed today</p>
+      <h1>AI product motion, archived with trust signals and source-level context.</h1>
+      <p class="hero-spotlight__copy">
+        Search the latest shifts in pricing, model releases, availability, policy, and product workflow across the AI stack.
+      </p>
+      <div class="hero-spotlight__actions">
+        <a class="button button--solid" href={withBase("/today/")}>
+          Review today's changes
+        </a>
+        <a class="button button--ghost" href={withBase("/archive/")}>
+          Explore the archive
+        </a>
+      </div>
+    </div>
+    <div class="hero-spotlight__feature">
+      <UpdateCard update={primary} />
+    </div>
+    <div class="hero-spotlight__stack">
+      {supporting.map((item) => (
+        <UpdateCard update={item} compact />
+      ))}
+    </div>
+  </section>
+)}

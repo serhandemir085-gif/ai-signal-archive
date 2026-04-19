@@ -1,0 +1,120 @@
+[
+  {
+    "sourceId": "src-openai-pricing",
+    "fetchedAt": "2026-04-18T07:17:00.000Z",
+    "checksum": "openai-pricing-demo-2026-04-18",
+    "extractedFields": {
+      "gpt-4-1-input": "$2.50",
+      "gpt-4-1-output": "$10.00",
+      "batch-discount": "50%"
+    },
+    "rawReference": "data://seed/openai-pricing-2026-04-18"
+  },
+  {
+    "sourceId": "src-anthropic-pricing",
+    "fetchedAt": "2026-04-19T12:03:08.691Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://www.anthropic.com/pricing"
+  },
+  {
+    "sourceId": "src-ollama-releases",
+    "fetchedAt": "2026-04-19T12:03:14.046Z",
+    "checksum": "a319745ee8d59a8679fdc455f863f31fad0d75e6",
+    "extractedFields": {
+      "latestTitle": "v0.21.0",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.0",
+      "latestPublished": "2026-04-18T01:30:26Z"
+    },
+    "rawReference": "https://github.com/ollama/ollama/releases.atom"
+  },
+  {
+    "sourceId": "src-open-webui-releases",
+    "fetchedAt": "2026-04-19T12:03:15.275Z",
+    "checksum": "a25d0a3f215b841d22e6bf34ebc4b406684883d9",
+    "extractedFields": {
+      "latestTitle": "v0.8.12",
+      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.8.12",
+      "latestPublished": "2026-03-27T00:26:52Z"
+    },
+    "rawReference": "https://github.com/open-webui/open-webui/releases.atom"
+  },
+  {
+    "sourceId": "src-openai-news",
+    "fetchedAt": "2026-04-19T12:03:08.003Z",
+    "checksum": "d0ecbe2e6158755f072553023256bd9478a21fe1",
+    "extractedFields": {
+      "latestTitle": "Codex for (almost) everything",
+      "latestLink": "https://openai.com/index/codex-for-almost-everything",
+      "latestPublished": "Thu, 16 Apr 2026 10:00:00 GMT"
+    },
+    "rawReference": "https://openai.com/news/rss.xml"
+  },
+  {
+    "sourceId": "src-google-ai-blog",
+    "fetchedAt": "2026-04-19T12:03:12.641Z",
+    "checksum": "9cceb25611aac91c55969aeeb8f88a0ee83a9b4f",
+    "extractedFields": {
+      "latestTitle": "7 ways to travel smarter this summer, with help from Google",
+      "latestLink": "https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/",
+      "latestPublished": "Fri, 17 Apr 2026 14:00:00 +0000"
+    },
+    "rawReference": "https://blog.google/technology/ai/rss/"
+  },
+  {
+    "sourceId": "src-meta-ai-updates",
+    "fetchedAt": "2026-04-19T12:03:13.144Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://ai.meta.com/"
+  },
+  {
+    "sourceId": "src-cursor-changelog",
+    "fetchedAt": "2026-04-19T12:03:15.275Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://cursor.com/changelog"
+  },
+  {
+    "sourceId": "src-github-copilot-release-notes",
+    "fetchedAt": "2026-04-19T12:03:15.275Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://docs.github.com/en/copilot/release-notes"
+  },
+  {
+    "sourceId": "src-runway-updates",
+    "fetchedAt": "2026-04-19T12:03:15.275Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://runwayml.com/news/"
+  },
+  {
+    "sourceId": "src-elevenlabs-blog",
+    "fetchedAt": "2026-04-19T12:03:15.275Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://elevenlabs.io/blog"
+  },
+  {
+    "sourceId": "src-perplexity-blog",
+    "fetchedAt": "2026-04-19T12:03:15.275Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://www.perplexity.ai/hub"
+  },
+  {
+    "sourceId": "src-anthropic-news",
+    "fetchedAt": "2026-04-19T12:03:39.039Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://www.anthropic.com/news/rss.xml"
+  },
+  {
+    "sourceId": "src-mistral-news",
+    "fetchedAt": "2026-04-19T12:03:39.898Z",
+    "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
+    "extractedFields": {},
+    "rawReference": "https://mistral.ai/news/rss.xml"
+  }
+]

@@ -1,0 +1,26 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getSiteUrl } from "@/lib/site";
+---
+
+<BaseLayout
+  title="About"
+  description="About AI Signal Archive."
+  pathname="/about/"
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "About", url: getSiteUrl("/about/") }
+  ]}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">About</p>
+    <h1>Why this archive exists</h1>
+    <p>AI product surfaces change quickly. This project turns those shifts into browsable, source-linked archive pages.</p>
+  </section>
+  <section class="shell prose-card">
+    <p>
+      The goal is not to be the loudest feed. It is to be the most legible index for people comparing tools, tracing change history,
+      and understanding when a product’s economics or positioning moved.
+    </p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,24 @@
+---
+import { withBase } from "@/lib/site";
+import { toDisplayDate } from "@/lib/date";
+import type { Update } from "@/lib/types";
+
+interface Props {
+  items: Update[];
+  title?: string;
+}
+
+const { items, title = "Recent moves" } = Astro.props;
+---
+
+<aside class="timeline-rail">
+  <p>{title}</p>
+  <ol>
+    {items.slice(0, 6).map((item) => (
+      <li>
+        <span>{toDisplayDate(item.occurredAt, { month: "short", day: "numeric" })}</span>
+        <a href={withBase(`/updates/${item.slug}/`)}>{item.title}</a>
+      </li>
+    ))}
+  </ol>
+</aside>

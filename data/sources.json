@@ -1,0 +1,144 @@
+[
+  {
+    "id": "src-openai-pricing",
+    "entityId": "org-openai",
+    "sourceType": "pricing",
+    "canonicalUrl": "https://openai.com/api/pricing/",
+    "parserType": "seed",
+    "trustScore": 0.98,
+    "pollFrequency": "daily",
+    "enabled": true,
+    "notes": "Official API pricing surface."
+  },
+  {
+    "id": "src-openai-news",
+    "entityId": "org-openai",
+    "sourceType": "changelog",
+    "canonicalUrl": "https://openai.com/news/rss.xml",
+    "parserType": "rss-feed",
+    "trustScore": 0.92,
+    "pollFrequency": "hourly",
+    "enabled": true
+  },
+  {
+    "id": "src-anthropic-pricing",
+    "entityId": "org-anthropic",
+    "sourceType": "pricing",
+    "canonicalUrl": "https://www.anthropic.com/pricing",
+    "parserType": "pricing-table",
+    "trustScore": 0.98,
+    "pollFrequency": "daily",
+    "enabled": true
+  },
+  {
+    "id": "src-anthropic-news",
+    "entityId": "org-anthropic",
+    "sourceType": "changelog",
+    "canonicalUrl": "https://www.anthropic.com/news/rss.xml",
+    "parserType": "seed",
+    "trustScore": 0.9,
+    "pollFrequency": "hourly",
+    "enabled": true
+  },
+  {
+    "id": "src-google-ai-blog",
+    "entityId": "org-google-ai",
+    "sourceType": "changelog",
+    "canonicalUrl": "https://blog.google/technology/ai/rss/",
+    "parserType": "rss-feed",
+    "trustScore": 0.9,
+    "pollFrequency": "hourly",
+    "enabled": true
+  },
+  {
+    "id": "src-mistral-news",
+    "entityId": "org-mistral",
+    "sourceType": "changelog",
+    "canonicalUrl": "https://mistral.ai/news/rss.xml",
+    "parserType": "seed",
+    "trustScore": 0.82,
+    "pollFrequency": "daily",
+    "enabled": true
+  },
+  {
+    "id": "src-meta-ai-updates",
+    "entityId": "org-meta-ai",
+    "sourceType": "social",
+    "canonicalUrl": "https://ai.meta.com/",
+    "parserType": "seed",
+    "trustScore": 0.71,
+    "pollFrequency": "daily",
+    "enabled": true
+  },
+  {
+    "id": "src-ollama-releases",
+    "entityId": "org-ollama",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/ollama/ollama/releases.atom",
+    "parserType": "github-releases",
+    "trustScore": 0.94,
+    "pollFrequency": "hourly",
+    "enabled": true
+  },
+  {
+    "id": "src-open-webui-releases",
+    "entityId": "org-open-webui",
+    "sourceType": "github",
+    "canonicalUrl": "https://github.com/open-webui/open-webui/releases.atom",
+    "parserType": "github-releases",
+    "trustScore": 0.94,
+    "pollFrequency": "hourly",
+    "enabled": true
+  },
+  {
+    "id": "src-cursor-changelog",
+    "entityId": "org-cursor",
+    "sourceType": "changelog",
+    "canonicalUrl": "https://cursor.com/changelog",
+    "parserType": "seed",
+    "trustScore": 0.72,
+    "pollFrequency": "daily",
+    "enabled": true,
+    "notes": "Seeded until a robust parser is added."
+  },
+  {
+    "id": "src-github-copilot-release-notes",
+    "entityId": "org-github-copilot",
+    "sourceType": "docs",
+    "canonicalUrl": "https://docs.github.com/en/copilot/release-notes",
+    "parserType": "seed",
+    "trustScore": 0.82,
+    "pollFrequency": "daily",
+    "enabled": true
+  },
+  {
+    "id": "src-runway-updates",
+    "entityId": "org-runway",
+    "sourceType": "changelog",
+    "canonicalUrl": "https://runwayml.com/news/",
+    "parserType": "seed",
+    "trustScore": 0.74,
+    "pollFrequency": "daily",
+    "enabled": true
+  },
+  {
+    "id": "src-elevenlabs-blog",
+    "entityId": "org-elevenlabs",
+    "sourceType": "changelog",
+    "canonicalUrl": "https://elevenlabs.io/blog",
+    "parserType": "seed",
+    "trustScore": 0.76,
+    "pollFrequency": "daily",
+    "enabled": true
+  },
+  {
+    "id": "src-perplexity-blog",
+    "entityId": "org-perplexity",
+    "sourceType": "changelog",
+    "canonicalUrl": "https://www.perplexity.ai/hub",
+    "parserType": "seed",
+    "trustScore": 0.75,
+    "pollFrequency": "daily",
+    "enabled": true
+  }
+]

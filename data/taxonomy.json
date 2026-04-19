@@ -1,0 +1,36 @@
+{
+  "categories": [
+    "Model Providers",
+    "Coding Assistants",
+    "Image & Video",
+    "Audio & Voice",
+    "Agent Search",
+    "Open Source AI"
+  ],
+  "clusters": [
+    "Flagship Labs",
+    "Developer Tools",
+    "Creative Media",
+    "Voice Stack",
+    "Research Assistants",
+    "Local Deployment"
+  ],
+  "changeTypes": [
+    "pricing",
+    "model-release",
+    "feature",
+    "policy",
+    "deprecation",
+    "availability",
+    "context-window",
+    "rate-limit",
+    "release-note"
+  ],
+  "trustBadges": [
+    "High Confidence",
+    "Official",
+    "Verified Social",
+    "Auto-Detected",
+    "Needs Review"
+  ]
+}

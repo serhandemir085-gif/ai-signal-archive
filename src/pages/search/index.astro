@@ -1,0 +1,62 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getSiteUrl } from "@/lib/site";
+---
+
+<BaseLayout
+  title="Search"
+  description="Search the AI changes archive."
+  pathname="/search/"
+  noIndex
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "Search", url: getSiteUrl("/search/") }
+  ]}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Noindex utility</p>
+    <h1>Search the archive</h1>
+    <p>Pagefind-powered search runs without a backend and stays out of the search index itself.</p>
+  </section>
+  <section class="shell search-console">
+    <form id="search-form">
+      <input id="search-input" type="search" name="q" placeholder="Try GPT-4.1, pricing, policy, Cursor, or Runway" />
+    </form>
+    <div id="search-results" class="search-console__results" aria-live="polite"></div>
+  </section>
+  <script is:inline type="module">
+    let pagefind;
+    const input = document.getElementById("search-input");
+    const results = document.getElementById("search-results");
+
+    async function ensurePagefind() {
+      if (!pagefind) {
+        pagefind = await import("/pagefind/pagefind.js");
+      }
+      return pagefind;
+    }
+
+    async function runSearch(query) {
+      if (!query || query.length < 2) {
+        results.innerHTML = "";
+        return;
+      }
+      results.innerHTML = "<p>Searching…</p>";
+      const mod = await ensurePagefind();
+      const search = await mod.search(query);
+      const items = await Promise.all(search.results.slice(0, 8).map((result) => result.data()));
+      results.innerHTML = items
+        .map(
+          (item) => `
+            <a class="search-result" href="${item.url}">
+              <strong>${item.meta.title}</strong>
+              <p>${item.excerpt}</p>
+            </a>
+          `
+        )
+        .join("");
+    }
+
+    input?.addEventListener("input", (event) => runSearch(event.currentTarget.value.trim()));
+  </script>
+</BaseLayout>

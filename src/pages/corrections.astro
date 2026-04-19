@@ -1,0 +1,27 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getSiteUrl } from "@/lib/site";
+---
+
+<BaseLayout
+  title="Corrections"
+  description="Correction policy for AI Signal Archive."
+  pathname="/corrections/"
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "Corrections", url: getSiteUrl("/corrections/") }
+  ]}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Corrections</p>
+    <h1>Correction policy</h1>
+    <p>If a published item is incomplete or misleading, it should be revised with a visible correction note instead of silently rewritten.</p>
+  </section>
+  <section class="shell prose-card">
+    <ul>
+      <li>Corrections should preserve the original publication timestamp.</li>
+      <li>Updated copy should note what changed and why.</li>
+      <li>Quarantined items should remain off public archive pages until verified.</li>
+    </ul>
+  </section>
+</BaseLayout>

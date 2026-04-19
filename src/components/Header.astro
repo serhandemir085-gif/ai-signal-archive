@@ -1,0 +1,23 @@
+---
+import { siteConfig, withBase } from "@/lib/site";
+---
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="brandmark" href={withBase("/")}>
+      <span class="brandmark__chip">AI</span>
+      <span>
+        <strong>{siteConfig.name}</strong>
+        <small>{siteConfig.shortDescription}</small>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      {siteConfig.nav.map((link) => (
+        <a href={withBase(link.href)}>{link.label}</a>
+      ))}
+      <a class="search-link" href={withBase("/search/")}>
+        Search
+      </a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,53 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TimelineRail from "@/components/TimelineRail.astro";
+import UpdateCard from "@/components/UpdateCard.astro";
+import { createCollectionJsonLd } from "@/lib/seo";
+import { getDataBundle, getUpdatesByChangeType, getChangeTypeDescription } from "@/lib/data";
+import { getSiteUrl } from "@/lib/site";
+
+export function getStaticPaths() {
+  const { taxonomy } = getDataBundle();
+  return taxonomy.changeTypes.map((type) => ({
+    params: { slug: type },
+    props: { changeType: type }
+  }));
+}
+
+const { changeType } = Astro.props;
+const updates = getUpdatesByChangeType(changeType);
+const jsonLd = [
+  createCollectionJsonLd(
+    changeType,
+    getChangeTypeDescription(changeType),
+    `/change/${changeType}/`,
+    updates.map((item) => getSiteUrl(`/updates/${item.slug}/`))
+  )
+];
+---
+
+<BaseLayout
+  title={changeType.replace("-", " ")}
+  description={getChangeTypeDescription(changeType)}
+  pathname={`/change/${changeType}/`}
+  image={`/og/change/${changeType}.svg`}
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: changeType.replace("-", " "), url: getSiteUrl(`/change/${changeType}/`) }
+  ]}
+  jsonLd={jsonLd}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Change hub</p>
+    <h1>{changeType.replace("-", " ")}</h1>
+    <p>{getChangeTypeDescription(changeType)}</p>
+  </section>
+  <section class="shell page-grid">
+    <div class="stack">
+      {updates.map((update) => (
+        <UpdateCard update={update} />
+      ))}
+    </div>
+    <TimelineRail items={updates} title="Latest in this category" />
+  </section>
+</BaseLayout>

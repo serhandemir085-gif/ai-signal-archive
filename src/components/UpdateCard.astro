@@ -1,0 +1,56 @@
+---
+import { resolveEntities, resolveSources } from "@/lib/data";
+import { toDisplayDate } from "@/lib/date";
+import { withBase } from "@/lib/site";
+import type { Update } from "@/lib/types";
+
+interface Props {
+  update: Update;
+  compact?: boolean;
+}
+
+const { update, compact = false } = Astro.props;
+const entities = resolveEntities(update.entityIds);
+const sources = resolveSources(update.sourceIds);
+---
+
+<article class:list={["update-card", compact && "update-card--compact"]}>
+  <div class="update-card__meta">
+    <div class="update-card__entities">
+      {entities.map((entity) => (
+        <a class="entity-pill" href={withBase(`/${entity.kind === "org" ? "org" : "product"}/${entity.slug}/`)}>
+          {entity.displayName}
+        </a>
+      ))}
+    </div>
+    <span class={`type-chip type-chip--${update.changeType}`}>{update.changeType.replace("-", " ")}</span>
+  </div>
+  <h3>
+    <a href={withBase(`/updates/${update.slug}/`)}>{update.title}</a>
+  </h3>
+  <p>{update.summary}</p>
+  {update.diff.length > 0 && (
+    <dl class="diff-grid">
+      {update.diff.slice(0, compact ? 1 : 2).map((item) => (
+        <div>
+          <dt>{item.label}</dt>
+          <dd>
+            <span>{item.old}</span>
+            <span>{item.new}</span>
+          </dd>
+        </div>
+      ))}
+    </dl>
+  )}
+  <div class="update-card__footer">
+    <div class="badge-row">
+      {update.confidenceBadges.map((badge) => (
+        <span class="trust-badge">{badge}</span>
+      ))}
+    </div>
+    <div class="update-card__details">
+      <span>{toDisplayDate(update.occurredAt)}</span>
+      <span>{sources.length} sources</span>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,507 @@
+[
+  {
+    "id": "upd-2026-04-19-openai-batch-pricing",
+    "slug": "openai-gpt-4-1-batch-pricing-visibility-apr-2026",
+    "entityIds": [
+      "org-openai",
+      "model-gpt-4-1"
+    ],
+    "changeType": "pricing",
+    "occurredAt": "2026-04-19T09:10:00.000Z",
+    "detectedAt": "2026-04-19T09:17:00.000Z",
+    "title": "OpenAI surfaces GPT-4.1 batch pricing more prominently",
+    "summary": "The pricing surface now frames batch processing as a first-class cost lever for GPT-4.1 workloads, making the discount easier to spot during evaluation.",
+    "oldValue": {
+      "batch-discount": "Mentioned in extended pricing copy"
+    },
+    "newValue": {
+      "batch-discount": "Prominent 50% batch pricing framing"
+    },
+    "diff": [
+      {
+        "label": "Batch pricing visibility",
+        "old": "Low prominence",
+        "new": "High prominence"
+      }
+    ],
+    "confidence": 0.94,
+    "confidenceBadges": [
+      "Official",
+      "High Confidence",
+      "Auto-Detected"
+    ],
+    "sourceIds": [
+      "src-openai-pricing"
+    ],
+    "publishState": "published",
+    "featured": true
+  },
+  {
+    "id": "upd-2026-04-19-cursor-background-agents",
+    "slug": "cursor-background-agent-rollout-apr-2026",
+    "entityIds": [
+      "org-cursor",
+      "product-cursor-agent"
+    ],
+    "changeType": "feature",
+    "occurredAt": "2026-04-19T08:12:00.000Z",
+    "detectedAt": "2026-04-19T08:43:00.000Z",
+    "title": "Cursor expands background agent workflows",
+    "summary": "Cursor continues shifting from inline autocomplete toward longer-running coding loops, with background agent workflows positioned as the key productivity surface.",
+    "oldValue": {
+      "workflow": "Inline and short-loop workflows"
+    },
+    "newValue": {
+      "workflow": "Background agent workflows emphasized"
+    },
+    "diff": [
+      {
+        "label": "Workflow emphasis",
+        "old": "Inline assist",
+        "new": "Background agent"
+      }
+    ],
+    "confidence": 0.78,
+    "confidenceBadges": [
+      "Verified Social",
+      "Needs Review"
+    ],
+    "sourceIds": [
+      "src-cursor-changelog"
+    ],
+    "publishState": "published",
+    "featured": true
+  },
+  {
+    "id": "upd-2026-04-19-ollama-v060",
+    "slug": "ollama-v0-6-0-model-tag-controls-apr-2026",
+    "entityIds": [
+      "org-ollama"
+    ],
+    "changeType": "release-note",
+    "occurredAt": "2026-04-19T07:55:00.000Z",
+    "detectedAt": "2026-04-19T08:43:00.000Z",
+    "title": "Ollama v0.6.0 adds model tag and memory controls",
+    "summary": "The latest Ollama release tightens local-model management with clearer tag handling and stronger memory-focused operational controls.",
+    "oldValue": {
+      "latest-release": "v0.5.x"
+    },
+    "newValue": {
+      "latest-release": "v0.6.0"
+    },
+    "diff": [
+      {
+        "label": "Latest release",
+        "old": "v0.5.x",
+        "new": "v0.6.0"
+      }
+    ],
+    "confidence": 0.95,
+    "confidenceBadges": [
+      "Official",
+      "High Confidence",
+      "Auto-Detected"
+    ],
+    "sourceIds": [
+      "src-ollama-releases"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-18-runway-gen4-rollout",
+    "slug": "runway-gen-4-public-rollout-apr-2026",
+    "entityIds": [
+      "org-runway",
+      "product-runway-gen-4"
+    ],
+    "changeType": "availability",
+    "occurredAt": "2026-04-18T16:00:00.000Z",
+    "detectedAt": "2026-04-18T16:24:00.000Z",
+    "title": "Runway pushes Gen-4 further into general availability",
+    "summary": "Runway’s newer generation stack is moving out of narrow launch positioning and into a broader product-facing rollout story across plans and workflows.",
+    "oldValue": {
+      "availability": "Limited launch positioning"
+    },
+    "newValue": {
+      "availability": "Broader public rollout"
+    },
+    "diff": [
+      {
+        "label": "Availability",
+        "old": "Selective",
+        "new": "Broader rollout"
+      }
+    ],
+    "confidence": 0.76,
+    "confidenceBadges": [
+      "Verified Social",
+      "Needs Review"
+    ],
+    "sourceIds": [
+      "src-runway-updates"
+    ],
+    "publishState": "published",
+    "featured": true
+  },
+  {
+    "id": "upd-2026-04-18-anthropic-context-guidance",
+    "slug": "anthropic-claude-context-guidance-apr-2026",
+    "entityIds": [
+      "org-anthropic",
+      "model-claude-3-7-sonnet"
+    ],
+    "changeType": "context-window",
+    "occurredAt": "2026-04-18T12:30:00.000Z",
+    "detectedAt": "2026-04-18T13:04:00.000Z",
+    "title": "Anthropic reframes long-context positioning for Claude 3.7 Sonnet",
+    "summary": "The pricing and positioning copy makes long-context use cases easier to understand for Claude 3.7 Sonnet buyers evaluating cost, throughput, and prompt size tradeoffs.",
+    "oldValue": {
+      "context-positioning": "Implicit in pricing and docs"
+    },
+    "newValue": {
+      "context-positioning": "Explicit in pricing guidance"
+    },
+    "diff": [
+      {
+        "label": "Context positioning",
+        "old": "Implicit",
+        "new": "Explicit"
+      }
+    ],
+    "confidence": 0.91,
+    "confidenceBadges": [
+      "Official",
+      "High Confidence",
+      "Auto-Detected"
+    ],
+    "sourceIds": [
+      "src-anthropic-pricing"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-18-open-webui-051",
+    "slug": "open-webui-0-5-1-workspace-permissions-apr-2026",
+    "entityIds": [
+      "org-open-webui"
+    ],
+    "changeType": "release-note",
+    "occurredAt": "2026-04-18T09:55:00.000Z",
+    "detectedAt": "2026-04-18T10:15:00.000Z",
+    "title": "Open WebUI 0.5.1 sharpens workspace permission flows",
+    "summary": "The latest Open WebUI release leans into multi-user and team scenarios with permission refinements and cleaner deployment ergonomics.",
+    "oldValue": {
+      "latest-release": "v0.5.0"
+    },
+    "newValue": {
+      "latest-release": "v0.5.1"
+    },
+    "diff": [
+      {
+        "label": "Latest release",
+        "old": "v0.5.0",
+        "new": "v0.5.1"
+      }
+    ],
+    "confidence": 0.95,
+    "confidenceBadges": [
+      "Official",
+      "High Confidence",
+      "Auto-Detected"
+    ],
+    "sourceIds": [
+      "src-open-webui-releases"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-17-google-gemini-rollout",
+    "slug": "google-gemini-2-5-pro-experimental-rollout-apr-2026",
+    "entityIds": [
+      "org-google-ai",
+      "model-gemini-2-5-pro"
+    ],
+    "changeType": "availability",
+    "occurredAt": "2026-04-17T18:45:00.000Z",
+    "detectedAt": "2026-04-17T19:10:00.000Z",
+    "title": "Google extends Gemini 2.5 Pro experimental access signals",
+    "summary": "Google’s AI surfaces continue to signal a wider experimental footprint for Gemini 2.5 Pro, with clearer messaging around where advanced access is available.",
+    "oldValue": {
+      "access-language": "Early experimental"
+    },
+    "newValue": {
+      "access-language": "Expanded experimental availability"
+    },
+    "diff": [
+      {
+        "label": "Access messaging",
+        "old": "Early experimental",
+        "new": "Expanded experimental"
+      }
+    ],
+    "confidence": 0.83,
+    "confidenceBadges": [
+      "Official",
+      "Auto-Detected"
+    ],
+    "sourceIds": [
+      "src-meta-ai-updates"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-17-elevenlabs-realtime",
+    "slug": "elevenlabs-realtime-conversation-mode-apr-2026",
+    "entityIds": [
+      "org-elevenlabs",
+      "product-elevenlabs-studio"
+    ],
+    "changeType": "feature",
+    "occurredAt": "2026-04-17T14:20:00.000Z",
+    "detectedAt": "2026-04-17T14:58:00.000Z",
+    "title": "ElevenLabs pushes realtime conversation mode harder",
+    "summary": "ElevenLabs is emphasizing conversational latency and production-readiness more clearly across its studio and voice workflow messaging.",
+    "oldValue": {
+      "voice-mode": "Realtime available in narrower messaging"
+    },
+    "newValue": {
+      "voice-mode": "Realtime conversation mode emphasized"
+    },
+    "diff": [
+      {
+        "label": "Realtime voice messaging",
+        "old": "Secondary",
+        "new": "Primary"
+      }
+    ],
+    "confidence": 0.77,
+    "confidenceBadges": [
+      "Verified Social",
+      "Needs Review"
+    ],
+    "sourceIds": [
+      "src-elevenlabs-blog"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-17-copilot-agent-mode",
+    "slug": "github-copilot-agent-mode-pr-apr-2026",
+    "entityIds": [
+      "org-github-copilot"
+    ],
+    "changeType": "feature",
+    "occurredAt": "2026-04-17T11:40:00.000Z",
+    "detectedAt": "2026-04-17T12:00:00.000Z",
+    "title": "GitHub Copilot leans further into agent-style workflows",
+    "summary": "Release-note messaging shows GitHub Copilot continuing its move beyond autocomplete toward broader task planning and pull request assistance.",
+    "oldValue": {
+      "workflow": "Assistant-centric"
+    },
+    "newValue": {
+      "workflow": "Agent-style planning and execution"
+    },
+    "diff": [
+      {
+        "label": "Workflow framing",
+        "old": "Assistant",
+        "new": "Agent-style"
+      }
+    ],
+    "confidence": 0.8,
+    "confidenceBadges": [
+      "Official",
+      "Needs Review"
+    ],
+    "sourceIds": [
+      "src-github-copilot-release-notes"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-16-mistral-batch-pricing",
+    "slug": "mistral-batch-inference-pricing-apr-2026",
+    "entityIds": [
+      "org-mistral",
+      "model-mistral-large"
+    ],
+    "changeType": "pricing",
+    "occurredAt": "2026-04-16T13:10:00.000Z",
+    "detectedAt": "2026-04-16T13:40:00.000Z",
+    "title": "Mistral sharpens its batch inference pricing story",
+    "summary": "Mistral’s enterprise messaging highlights batch inference economics more explicitly, positioning cost efficiency as a differentiator for larger deployments.",
+    "oldValue": {
+      "batch-pricing": "Mentioned sparingly"
+    },
+    "newValue": {
+      "batch-pricing": "Called out as a value lever"
+    },
+    "diff": [
+      {
+        "label": "Batch pricing visibility",
+        "old": "Low",
+        "new": "High"
+      }
+    ],
+    "confidence": 0.74,
+    "confidenceBadges": [
+      "Official",
+      "Needs Review"
+    ],
+    "sourceIds": [
+      "src-mistral-news"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-16-perplexity-team-controls",
+    "slug": "perplexity-pro-team-controls-apr-2026",
+    "entityIds": [
+      "org-perplexity",
+      "product-perplexity-pro"
+    ],
+    "changeType": "feature",
+    "occurredAt": "2026-04-16T10:20:00.000Z",
+    "detectedAt": "2026-04-16T10:58:00.000Z",
+    "title": "Perplexity Pro introduces clearer team control language",
+    "summary": "Perplexity is speaking more directly to team buyers, emphasizing admin controls and shared research workflows instead of purely individual productivity.",
+    "oldValue": {
+      "buyer-persona": "Individual pro users"
+    },
+    "newValue": {
+      "buyer-persona": "Individual plus team buyers"
+    },
+    "diff": [
+      {
+        "label": "Go-to-market focus",
+        "old": "Solo users",
+        "new": "Teams and solo users"
+      }
+    ],
+    "confidence": 0.76,
+    "confidenceBadges": [
+      "Verified Social",
+      "Needs Review"
+    ],
+    "sourceIds": [
+      "src-perplexity-blog"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-15-openai-model-availability",
+    "slug": "openai-gpt-4-1-availability-copy-apr-2026",
+    "entityIds": [
+      "org-openai",
+      "model-gpt-4-1"
+    ],
+    "changeType": "availability",
+    "occurredAt": "2026-04-15T15:05:00.000Z",
+    "detectedAt": "2026-04-15T15:14:00.000Z",
+    "title": "OpenAI tightens GPT-4.1 availability copy across buyer-facing surfaces",
+    "summary": "OpenAI is making it easier to understand where GPT-4.1 sits in the lineup, especially for builders comparing it against smaller and faster model tiers.",
+    "oldValue": {
+      "positioning": "Flagship with broad copy"
+    },
+    "newValue": {
+      "positioning": "Flagship with clearer tier placement"
+    },
+    "diff": [
+      {
+        "label": "Model positioning",
+        "old": "Broad",
+        "new": "Sharper tier placement"
+      }
+    ],
+    "confidence": 0.86,
+    "confidenceBadges": [
+      "Official",
+      "Auto-Detected"
+    ],
+    "sourceIds": [
+      "src-openai-news",
+      "src-openai-pricing"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-14-anthropic-policy",
+    "slug": "anthropic-usage-policy-messaging-apr-2026",
+    "entityIds": [
+      "org-anthropic"
+    ],
+    "changeType": "policy",
+    "occurredAt": "2026-04-14T12:00:00.000Z",
+    "detectedAt": "2026-04-14T12:33:00.000Z",
+    "title": "Anthropic refreshes usage-policy messaging for builders",
+    "summary": "Anthropic’s policy surface now reads more operationally for teams shipping Claude-based products, with clearer emphasis on review expectations and safe deployment.",
+    "oldValue": {
+      "policy-tone": "Principles-first"
+    },
+    "newValue": {
+      "policy-tone": "Operational guidance"
+    },
+    "diff": [
+      {
+        "label": "Policy framing",
+        "old": "Principles",
+        "new": "Operational guidance"
+      }
+    ],
+    "confidence": 0.79,
+    "confidenceBadges": [
+      "Official",
+      "Needs Review"
+    ],
+    "sourceIds": [
+      "src-anthropic-news"
+    ],
+    "publishState": "published",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-13-meta-llama-ecosystem",
+    "slug": "meta-llama-4-ecosystem-positioning-apr-2026",
+    "entityIds": [
+      "org-meta-ai",
+      "model-llama-4"
+    ],
+    "changeType": "availability",
+    "occurredAt": "2026-04-13T17:05:00.000Z",
+    "detectedAt": "2026-04-13T17:45:00.000Z",
+    "title": "Meta leans harder on Llama 4 ecosystem distribution",
+    "summary": "Meta’s messaging keeps emphasizing ecosystem reach and deployment breadth as the clearest signal around the Llama 4 family.",
+    "oldValue": {
+      "distribution-story": "Model-centric"
+    },
+    "newValue": {
+      "distribution-story": "Ecosystem-centric"
+    },
+    "diff": [
+      {
+        "label": "Distribution framing",
+        "old": "Model-centric",
+        "new": "Ecosystem-centric"
+      }
+    ],
+    "confidence": 0.72,
+    "confidenceBadges": [
+      "Verified Social",
+      "Needs Review"
+    ],
+    "sourceIds": [
+      "src-google-ai-blog"
+    ],
+    "publishState": "published",
+    "featured": false
+  }
+]

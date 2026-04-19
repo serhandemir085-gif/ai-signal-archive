@@ -1,0 +1,26 @@
+---
+import { withBase } from "@/lib/site";
+import type { Update } from "@/lib/types";
+
+interface Props {
+  updates: Update[];
+}
+
+const { updates } = Astro.props;
+---
+
+{updates.length > 0 && (
+  <section class="signal-tape" aria-label="Latest signals">
+    <div class="shell signal-tape__inner">
+      <span class="signal-tape__label">Latest signals</span>
+      <div class="signal-tape__items">
+        {updates.slice(0, 5).map((update) => (
+          <a href={withBase(`/updates/${update.slug}/`)}>
+            <strong>{update.changeType.replace("-", " ")}</strong>
+            <span>{update.title}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

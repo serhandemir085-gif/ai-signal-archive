@@ -1,0 +1,27 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getSiteUrl } from "@/lib/site";
+---
+
+<BaseLayout
+  title="Privacy"
+  description="Privacy notes for AI Signal Archive."
+  pathname="/privacy/"
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "Privacy", url: getSiteUrl("/privacy/") }
+  ]}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Privacy</p>
+    <h1>Privacy and analytics</h1>
+    <p>The public site is designed for simple reading and search. No accounts, no inboxes, and no personalized targeting are included in v1.</p>
+  </section>
+  <section class="shell prose-card">
+    <ul>
+      <li>Cloudflare Web Analytics can be enabled for aggregate privacy-first measurement.</li>
+      <li>There are no user accounts in v1, so there is no profile-level product data to process.</li>
+      <li>Source collection happens against public URLs only.</li>
+    </ul>
+  </section>
+</BaseLayout>

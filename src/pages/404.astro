@@ -1,0 +1,15 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { withBase } from "@/lib/site";
+---
+
+<BaseLayout title="Not found" description="This page could not be found." noIndex>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">404</p>
+    <h1>Page not found</h1>
+    <p>The archive page you tried to open does not exist or has not been generated yet.</p>
+    <a class="button button--solid" href={withBase("/")}>
+      Return home
+    </a>
+  </section>
+</BaseLayout>

@@ -1,0 +1,47 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getDataBundle, getEntityById } from "@/lib/data";
+import { getSiteUrl } from "@/lib/site";
+
+const { sources } = getDataBundle();
+---
+
+<BaseLayout
+  title="Sources"
+  description="Allowlisted sources powering the AI changes tracker."
+  pathname="/sources/"
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "Sources", url: getSiteUrl("/sources/") }
+  ]}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Allowlist</p>
+    <h1>Tracked sources</h1>
+    <p>Every configured source is visible here with its trust score, parser type, and tracked entity.</p>
+  </section>
+  <section class="shell source-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Entity</th>
+          <th>Source type</th>
+          <th>Parser</th>
+          <th>Trust</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sources.map((source) => (
+          <tr>
+            <td>{getEntityById(source.entityId)?.displayName ?? source.entityId}</td>
+            <td>{source.sourceType}</td>
+            <td>{source.parserType}</td>
+            <td>{Math.round(source.trustScore * 100)}%</td>
+            <td><a href={source.canonicalUrl}>{source.canonicalUrl}</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+</BaseLayout>

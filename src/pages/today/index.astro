@@ -1,0 +1,39 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TimelineRail from "@/components/TimelineRail.astro";
+import UpdateCard from "@/components/UpdateCard.astro";
+import { createCollectionJsonLd } from "@/lib/seo";
+import { getTodayUpdates } from "@/lib/data";
+import { getSiteUrl } from "@/lib/site";
+
+const updates = getTodayUpdates();
+const jsonLd = [
+  createCollectionJsonLd("Today", "Latest archived AI changes.", "/today/", updates.map((item) => getSiteUrl(`/updates/${item.slug}/`)))
+];
+---
+
+<BaseLayout
+  title="Today"
+  description="Latest changes from the most recent archived AI signal window."
+  pathname="/today/"
+  image="/og/archive/latest.svg"
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "Today", url: getSiteUrl("/today/") }
+  ]}
+  jsonLd={jsonLd}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Latest day</p>
+    <h1>Today's AI changes</h1>
+    <p>The freshest archive slice for releases, pricing moves, workflow updates, and policy shifts.</p>
+  </section>
+  <section class="shell page-grid">
+    <div class="stack">
+      {updates.map((update) => (
+        <UpdateCard update={update} />
+      ))}
+    </div>
+    <TimelineRail items={updates} title="Today's timeline" />
+  </section>
+</BaseLayout>

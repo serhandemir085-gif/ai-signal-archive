@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TimelineRail from "@/components/TimelineRail.astro";
+import UpdateCard from "@/components/UpdateCard.astro";
+import { createCollectionJsonLd } from "@/lib/seo";
+import { getWeekUpdates } from "@/lib/data";
+import { getSiteUrl } from "@/lib/site";
+
+const updates = getWeekUpdates();
+const jsonLd = [
+  createCollectionJsonLd("This week", "Seven-day view of AI changes.", "/week/", updates.map((item) => getSiteUrl(`/updates/${item.slug}/`)))
+];
+---
+
+<BaseLayout
+  title="This Week"
+  description="Seven-day AI tracker archive covering pricing, releases, policy, and availability."
+  pathname="/week/"
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "This Week", url: getSiteUrl("/week/") }
+  ]}
+  jsonLd={jsonLd}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Seven-day view</p>
+    <h1>This week in AI product motion</h1>
+    <p>A broader look at the latest archive window for tracking momentum, cadence, and clustering by provider.</p>
+  </section>
+  <section class="shell page-grid">
+    <div class="stack">
+      {updates.map((update) => (
+        <UpdateCard update={update} />
+      ))}
+    </div>
+    <TimelineRail items={updates} title="This week" />
+  </section>
+</BaseLayout>

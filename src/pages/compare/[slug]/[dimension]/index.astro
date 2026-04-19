@@ -1,0 +1,67 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getDataBundle, getEntityById } from "@/lib/data";
+import { getSiteUrl, withBase } from "@/lib/site";
+
+export function getStaticPaths() {
+  const { comparisons } = getDataBundle();
+  return comparisons.flatMap((comparison) =>
+    comparison.dimensions.map((dimension) => ({
+      params: { slug: comparison.slug, dimension: dimension.slug },
+      props: { comparison, dimension }
+    }))
+  );
+}
+
+const { comparison, dimension } = Astro.props;
+const entities = comparison.entities.map((entityId) => getEntityById(entityId)).filter(Boolean);
+---
+
+<BaseLayout
+  title={`${comparison.title} | ${dimension.label}`}
+  description={dimension.summary}
+  pathname={`/compare/${comparison.slug}/${dimension.slug}/`}
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: comparison.title, url: getSiteUrl(`/compare/${comparison.slug}/${dimension.slug}/`) }
+  ]}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Comparison</p>
+    <h1>{comparison.title}</h1>
+    <p>{dimension.summary}</p>
+  </section>
+  <section class="shell stack">
+    <div class="category-rail">
+      {comparison.dimensions.map((item) => (
+        <a class={`type-chip ${item.slug === dimension.slug ? "type-chip--feature" : ""}`} href={withBase(`/compare/${comparison.slug}/${item.slug}/`)}>
+          {item.label}
+        </a>
+      ))}
+    </div>
+    <article class="comparison-card source-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Metric</th>
+            {entities.map((entity) => (
+              <th>{entity?.displayName}</th>
+            ))}
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          {dimension.rows.map((row) => (
+            <tr>
+              <td>{row.label}</td>
+              {comparison.entities.map((entityId) => (
+                <td>{row.values[entityId]}</td>
+              ))}
+              <td>{row.notes ?? "-"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </article>
+  </section>
+</BaseLayout>

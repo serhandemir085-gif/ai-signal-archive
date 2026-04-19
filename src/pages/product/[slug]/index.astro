@@ -1,0 +1,73 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TimelineRail from "@/components/TimelineRail.astro";
+import UpdateCard from "@/components/UpdateCard.astro";
+import { createCollectionJsonLd } from "@/lib/seo";
+import { getDataBundle, getEntityById, getUpdatesForEntity } from "@/lib/data";
+import { getSiteUrl } from "@/lib/site";
+
+export function getStaticPaths() {
+  const { entities } = getDataBundle();
+  return entities
+    .filter((entity) => entity.kind !== "org")
+    .map((entity) => ({
+      params: { slug: entity.slug },
+      props: { entity }
+    }));
+}
+
+const { entity } = Astro.props;
+const updates = getUpdatesForEntity(entity.id);
+const parent = entity.parentOrg ? getEntityById(entity.parentOrg) : undefined;
+const jsonLd = [
+  createCollectionJsonLd(
+    entity.displayName,
+    entity.summary,
+    `/product/${entity.slug}/`,
+    updates.map((item) => getSiteUrl(`/updates/${item.slug}/`))
+  )
+];
+---
+
+<BaseLayout
+  title={entity.displayName}
+  description={entity.summary}
+  pathname={`/product/${entity.slug}/`}
+  image={`/og/entity/${entity.slug}.svg`}
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    ...(parent ? [{ name: parent.displayName, url: getSiteUrl(`/org/${parent.slug}/`) }] : []),
+    { name: entity.displayName, url: getSiteUrl(`/product/${entity.slug}/`) }
+  ]}
+  jsonLd={jsonLd}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">{entity.kind === "model" ? "Model" : "Product"}</p>
+    <h1>{entity.displayName}</h1>
+    <p>{entity.summary}</p>
+  </section>
+  <section class="shell stack">
+    <div class="metric-strip">
+      <div>
+        <strong>{updates.length}</strong>
+        <span>Published changes</span>
+      </div>
+      <div>
+        <strong>{parent?.displayName ?? "Independent"}</strong>
+        <span>Parent organization</span>
+      </div>
+      <div>
+        <strong>{entity.heroMetric?.value ?? "—"}</strong>
+        <span>{entity.heroMetric?.label ?? "Signal"}</span>
+      </div>
+    </div>
+    <div class="page-grid">
+      <div class="stack">
+        {updates.map((update) => (
+          <UpdateCard update={update} />
+        ))}
+      </div>
+      <TimelineRail items={updates} title={`${entity.displayName} timeline`} />
+    </div>
+  </section>
+</BaseLayout>

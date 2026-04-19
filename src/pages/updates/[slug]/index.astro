@@ -1,0 +1,103 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TimelineRail from "@/components/TimelineRail.astro";
+import { createArticleJsonLd } from "@/lib/seo";
+import { getDataBundle, resolveEntities, resolveSources, getUpdatesForEntity } from "@/lib/data";
+import { toDisplayDate } from "@/lib/date";
+import { getSiteUrl, withBase } from "@/lib/site";
+
+export function getStaticPaths() {
+  const { updates } = getDataBundle();
+  return updates.map((update) => ({
+    params: { slug: update.slug },
+    props: { update }
+  }));
+}
+
+const { update } = Astro.props;
+const entities = resolveEntities(update.entityIds);
+const sources = resolveSources(update.sourceIds);
+const leadEntity = entities[0];
+const related = leadEntity ? getUpdatesForEntity(leadEntity.id).filter((item) => item.slug !== update.slug) : [];
+const jsonLd = [
+  createArticleJsonLd(update.title, update.summary, `/updates/${update.slug}/`, update.occurredAt, update.detectedAt)
+];
+---
+
+<BaseLayout
+  title={update.title}
+  description={update.summary}
+  pathname={`/updates/${update.slug}/`}
+  image={`/og/update/${update.slug}.svg`}
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    ...(leadEntity
+      ? [
+          {
+            name: leadEntity.displayName,
+            url: getSiteUrl(`/${leadEntity.kind === "org" ? "org" : "product"}/${leadEntity.slug}/`)
+          }
+        ]
+      : []),
+    { name: update.title, url: getSiteUrl(`/updates/${update.slug}/`) }
+  ]}
+  jsonLd={jsonLd}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">{update.changeType.replace("-", " ")}</p>
+    <h1>{update.title}</h1>
+    <p>{update.summary}</p>
+  </section>
+  <section class="shell stack">
+    <div class="metric-strip">
+      <div>
+        <strong>{toDisplayDate(update.occurredAt)}</strong>
+        <span>Occurred</span>
+      </div>
+      <div>
+        <strong>{Math.round(update.confidence * 100)}%</strong>
+        <span>Confidence</span>
+      </div>
+      <div>
+        <strong>{sources.length}</strong>
+        <span>Sources</span>
+      </div>
+    </div>
+    <div class="page-grid">
+      <article class="prose-card">
+        <div class="badge-row">
+          {entities.map((entity) => (
+            <a class="entity-pill" href={withBase(`/${entity.kind === "org" ? "org" : "product"}/${entity.slug}/`)}>
+              {entity.displayName}
+            </a>
+          ))}
+          {update.confidenceBadges.map((badge) => (
+            <span class="trust-badge">{badge}</span>
+          ))}
+        </div>
+        {update.diff.length > 0 && (
+          <dl class="diff-grid">
+            {update.diff.map((item) => (
+              <div>
+                <dt>{item.label}</dt>
+                <dd>
+                  <span>{item.old}</span>
+                  <span>{item.new}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        )}
+        <h2>Source trail</h2>
+        <ul>
+          {sources.map((source) => (
+            <li>
+              <a href={source.canonicalUrl}>{source.canonicalUrl}</a>
+            </li>
+          ))}
+        </ul>
+      </article>
+      <TimelineRail items={related} title={leadEntity ? `${leadEntity.displayName} timeline` : "Recent moves"} />
+    </div>
+  </section>
+</BaseLayout>

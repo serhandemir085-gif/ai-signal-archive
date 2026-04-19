@@ -1,0 +1,20 @@
+---
+import { siteConfig, withBase } from "@/lib/site";
+---
+
+<footer class="site-footer">
+  <div class="shell site-footer__inner">
+    <div>
+      <p class="footer-heading">{siteConfig.name}</p>
+      <p class="footer-copy">
+        Search-first archive pages for AI launches, pricing shifts, feature moves, and policy changes.
+      </p>
+    </div>
+    <div class="footer-links">
+      {siteConfig.footerLinks.map((link) => (
+        <a href={withBase(link.href)}>{link.label}</a>
+      ))}
+      <a href={withBase("/rss.xml")}>RSS</a>
+    </div>
+  </div>
+</footer>

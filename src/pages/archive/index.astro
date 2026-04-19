@@ -1,0 +1,34 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getArchiveDays } from "@/lib/data";
+import { getSiteUrl, withBase } from "@/lib/site";
+
+const days = getArchiveDays();
+---
+
+<BaseLayout
+  title="Archive"
+  description="Date-based archive for AI product changes."
+  pathname="/archive/"
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "Archive", url: getSiteUrl("/archive/") }
+  ]}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Date index</p>
+    <h1>Archive by day</h1>
+    <p>Every published change grouped by archived date, with direct links into the day-level timeline.</p>
+  </section>
+  <section class="shell archive-list">
+    {days.map((day) => (
+      <a class="archive-list__item" href={withBase(`/archive/${day.parts.year}/${day.parts.month}/${day.parts.day}/`)}>
+        <div>
+          <strong>{day.day}</strong>
+          <p>{day.items[0]?.title}</p>
+        </div>
+        <span>{day.count} changes</span>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

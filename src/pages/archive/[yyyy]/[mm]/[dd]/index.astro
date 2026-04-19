@@ -1,0 +1,56 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import TimelineRail from "@/components/TimelineRail.astro";
+import UpdateCard from "@/components/UpdateCard.astro";
+import { createCollectionJsonLd } from "@/lib/seo";
+import { getArchiveDays } from "@/lib/data";
+import { getSiteUrl } from "@/lib/site";
+
+export function getStaticPaths() {
+  return getArchiveDays().map((day) => ({
+    params: {
+      yyyy: day.parts.year,
+      mm: day.parts.month,
+      dd: day.parts.day
+    },
+    props: { day }
+  }));
+}
+
+const { day } = Astro.props;
+const jsonLd = [
+  createCollectionJsonLd(
+    `Archive ${day.day}`,
+    `AI archive for ${day.day}.`,
+    `/archive/${day.parts.year}/${day.parts.month}/${day.parts.day}/`,
+    day.items.map((item) => getSiteUrl(`/updates/${item.slug}/`))
+  )
+];
+---
+
+<BaseLayout
+  title={`Archive ${day.day}`}
+  description={`Archived AI changes for ${day.day}.`}
+  pathname={`/archive/${day.parts.year}/${day.parts.month}/${day.parts.day}/`}
+  image={`/og/archive/${day.day}.svg`}
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "Archive", url: getSiteUrl("/archive/") },
+    { name: day.day, url: getSiteUrl(`/archive/${day.parts.year}/${day.parts.month}/${day.parts.day}/`) }
+  ]}
+  jsonLd={jsonLd}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Daily archive</p>
+    <h1>{day.day}</h1>
+    <p>{day.count} published changes are grouped in this day-level archive.</p>
+  </section>
+  <section class="shell page-grid">
+    <div class="stack">
+      {day.items.map((update) => (
+        <UpdateCard update={update} />
+      ))}
+    </div>
+    <TimelineRail items={day.items} title="Day timeline" />
+  </section>
+</BaseLayout>

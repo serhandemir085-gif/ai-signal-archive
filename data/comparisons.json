@@ -1,0 +1,88 @@
+[
+  {
+    "slug": "openai-vs-anthropic",
+    "title": "OpenAI vs Anthropic",
+    "summary": "Official-facing snapshot of flagship model economics and access signals.",
+    "entities": ["org-openai", "org-anthropic"],
+    "dimensions": [
+      {
+        "slug": "pricing",
+        "label": "Pricing",
+        "summary": "Latest tracked pricing snapshot for flagship developer models.",
+        "rows": [
+          {
+            "label": "Flagship input / 1M tokens",
+            "values": {
+              "org-openai": "$2.50",
+              "org-anthropic": "$3.00"
+            }
+          },
+          {
+            "label": "Flagship output / 1M tokens",
+            "values": {
+              "org-openai": "$10.00",
+              "org-anthropic": "$15.00"
+            }
+          },
+          {
+            "label": "Context headline",
+            "values": {
+              "org-openai": "Long-context API positioning",
+              "org-anthropic": "200K standard window positioning"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "cadence",
+        "label": "Release cadence",
+        "summary": "Editorial snapshot of product motion in the past 30 days.",
+        "rows": [
+          {
+            "label": "30d published changes",
+            "values": {
+              "org-openai": "8",
+              "org-anthropic": "6"
+            }
+          },
+          {
+            "label": "Primary motion",
+            "values": {
+              "org-openai": "Pricing and availability",
+              "org-anthropic": "Feature and policy"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cursor-vs-github-copilot",
+    "title": "Cursor vs GitHub Copilot",
+    "summary": "Developer-tooling lens on agent workflows and product packaging.",
+    "entities": ["org-cursor", "org-github-copilot"],
+    "dimensions": [
+      {
+        "slug": "workflow",
+        "label": "Workflow",
+        "summary": "How each product frames coding assistance right now.",
+        "rows": [
+          {
+            "label": "Primary AI workflow",
+            "values": {
+              "org-cursor": "Background agent loops",
+              "org-github-copilot": "IDE + PR assistance"
+            }
+          },
+          {
+            "label": "Recent product motion",
+            "values": {
+              "org-cursor": "Agent rollout",
+              "org-github-copilot": "Copilot Spaces and agent mode"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

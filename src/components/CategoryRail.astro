@@ -1,0 +1,14 @@
+---
+import { getDataBundle } from "@/lib/data";
+import { withBase } from "@/lib/site";
+
+const { taxonomy } = getDataBundle();
+---
+
+<div class="category-rail">
+  {taxonomy.changeTypes.map((type) => (
+    <a href={withBase(`/change/${type}/`)} class={`type-chip type-chip--${type}`}>
+      {type.replace("-", " ")}
+    </a>
+  ))}
+</div>

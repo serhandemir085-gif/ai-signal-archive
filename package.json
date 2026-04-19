@@ -1,0 +1,41 @@
+{
+  "name": "ai-signal-archive",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build:astro": "astro build",
+    "build:search": "pagefind --site dist",
+    "build": "npm run build:astro && npm run build:search",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "ingest": "tsx scripts/ingest.ts",
+    "ingest:full": "tsx scripts/ingest.ts --full",
+    "cf-typegen": "wrangler types",
+    "deploy": "npm run build && wrangler deploy",
+    "verify": "npm run check && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@fontsource/ibm-plex-sans": "^5.2.8",
+    "@fontsource/newsreader": "^5.2.8",
+    "astro": "^5.18.1",
+    "cheerio": "^1.1.2",
+    "pagefind": "^1.5.2",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "@types/node": "^24.7.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.83.0"
+  }
+}

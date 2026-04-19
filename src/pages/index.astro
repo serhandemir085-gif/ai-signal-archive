@@ -1,0 +1,91 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import CategoryRail from "@/components/CategoryRail.astro";
+import HeroSpotlight from "@/components/HeroSpotlight.astro";
+import ProviderRadar from "@/components/ProviderRadar.astro";
+import SectionHeading from "@/components/SectionHeading.astro";
+import SignalTape from "@/components/SignalTape.astro";
+import UpdateCard from "@/components/UpdateCard.astro";
+import { createCollectionJsonLd } from "@/lib/seo";
+import { getFeaturedUpdates, getTodayUpdates, getWeekUpdates } from "@/lib/data";
+import { getSiteUrl, withBase } from "@/lib/site";
+
+const today = getTodayUpdates();
+const featured = getFeaturedUpdates();
+const week = getWeekUpdates();
+const jsonLd = [
+  createCollectionJsonLd(
+    "AI changes tracker",
+    "Latest changes across AI pricing, releases, features, and policy.",
+    "/",
+    today.slice(0, 6).map((item) => getSiteUrl(`/updates/${item.slug}/`))
+  )
+];
+---
+
+<BaseLayout title="AI changes tracker" image="/og/home.svg" jsonLd={jsonLd}>
+  <SignalTape updates={today} />
+  <HeroSpotlight featured={featured} />
+
+  <section class="section shell">
+    <SectionHeading
+      eyebrow="Today's deltas"
+      title="High-confidence changes from the latest archived day"
+      summary="Compact diffs with source counts, trust badges, and direct access to the underlying archive page."
+    />
+    <div class="grid-three">
+      {today.slice(0, 6).map((update) => (
+        <UpdateCard update={update} compact />
+      ))}
+    </div>
+  </section>
+
+  <section class="section shell">
+    <SectionHeading
+      eyebrow="Category rail"
+      title="Jump directly into the change surface you care about"
+      summary="Prebuilt category pages stay crawlable and keep the archive focused on real product motion."
+    />
+    <CategoryRail />
+  </section>
+
+  <section class="section shell">
+    <SectionHeading
+      eyebrow="Provider radar"
+      title="Where the archive is seeing the most motion"
+      summary="A quick view of which organizations are publishing the most visible changes in the last 7 and 30 days."
+    />
+    <ProviderRadar />
+  </section>
+
+  <section class="section shell">
+    <div class="grid-two">
+      <div>
+        <SectionHeading
+          eyebrow="This week"
+          title="A fuller read of the latest change window"
+          summary="Use the weekly layer when you need broader context around pricing, release, and policy motion."
+        />
+        <div class="stack">
+          {week.slice(0, 5).map((update) => (
+            <UpdateCard update={update} />
+          ))}
+        </div>
+      </div>
+      <div class="prose-card">
+        <SectionHeading
+          eyebrow="Evergreen navigation"
+          title="Start with provider hubs and comparisons"
+          summary="These pages are designed for repeat lookup and durable search visibility."
+        />
+        <ul>
+          <li><a href={withBase("/org/openai/")}>OpenAI tracker</a></li>
+          <li><a href={withBase("/org/anthropic/")}>Anthropic tracker</a></li>
+          <li><a href={withBase("/org/cursor/")}>Cursor tracker</a></li>
+          <li><a href={withBase("/compare/openai-vs-anthropic/pricing/")}>OpenAI vs Anthropic pricing</a></li>
+          <li><a href={withBase("/compare/cursor-vs-github-copilot/workflow/")}>Cursor vs GitHub Copilot workflow</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

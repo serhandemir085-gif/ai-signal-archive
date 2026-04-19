@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getSiteUrl } from "@/lib/site";
+---
+
+<BaseLayout
+  title="Methodology"
+  description="How AI Signal Archive collects, classifies, and publishes changes."
+  pathname="/methodology/"
+  breadcrumbs={[
+    { name: "Home", url: getSiteUrl("/") },
+    { name: "Methodology", url: getSiteUrl("/methodology/") }
+  ]}
+>
+  <section class="page-header shell">
+    <p class="page-header__eyebrow">Methodology</p>
+    <h1>How the tracker works</h1>
+    <p>Static-first publishing, official-source bias, and quarantine rules designed to keep the archive useful and explainable.</p>
+  </section>
+  <section class="shell grid-two">
+    <article class="prose-card">
+      <h2>Collection and ingestion</h2>
+      <ul>
+        <li>Official docs, pricing pages, changelogs, status pages, and GitHub releases are the primary triggers.</li>
+        <li>Verified social is allowed as a corroboration layer, not as the default source of truth.</li>
+        <li>Build-time ingestion writes snapshots and updates to the repository so public traffic never hits a live scraper.</li>
+      </ul>
+    </article>
+    <article class="prose-card">
+      <h2>Publishing rules</h2>
+      <ul>
+        <li>Structured diffs from high-trust official sources can auto-publish.</li>
+        <li>Lower-trust signals remain in quarantine unless corroborated.</li>
+        <li>Every published update links back to the source set used to justify the change.</li>
+      </ul>
+    </article>
+  </section>
+</BaseLayout>
