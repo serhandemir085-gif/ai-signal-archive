@@ -41,12 +41,12 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-20T05:29:13.880Z",
-    "checksum": "d0ecbe2e6158755f072553023256bd9478a21fe1",
+    "fetchedAt": "2026-04-20T14:12:33.880Z",
+    "checksum": "d4fc4d6b1c6fa2ebf9209ec9fbd3fb55afc13b5f",
     "extractedFields": {
-      "latestTitle": "Codex for (almost) everything",
-      "latestLink": "https://openai.com/index/codex-for-almost-everything",
-      "latestPublished": "Thu, 16 Apr 2026 10:00:00 GMT"
+      "latestTitle": "OpenAI helps Hyatt advance AI among colleagues",
+      "latestLink": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
+      "latestPublished": "Mon, 20 Apr 2026 00:00:00 GMT"
     },
     "rawReference": "https://openai.com/news/rss.xml"
   },
