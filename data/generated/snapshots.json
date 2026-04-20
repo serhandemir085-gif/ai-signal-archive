@@ -12,14 +12,14 @@
   },
   {
     "sourceId": "src-anthropic-pricing",
-    "fetchedAt": "2026-04-19T12:03:08.691Z",
+    "fetchedAt": "2026-04-20T05:29:14.360Z",
     "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
     "extractedFields": {},
     "rawReference": "https://www.anthropic.com/pricing"
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-19T12:03:14.046Z",
+    "fetchedAt": "2026-04-20T05:29:15.152Z",
     "checksum": "a319745ee8d59a8679fdc455f863f31fad0d75e6",
     "extractedFields": {
       "latestTitle": "v0.21.0",
@@ -30,7 +30,7 @@
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-19T12:03:15.275Z",
+    "fetchedAt": "2026-04-20T05:29:15.956Z",
     "checksum": "a25d0a3f215b841d22e6bf34ebc4b406684883d9",
     "extractedFields": {
       "latestTitle": "v0.8.12",
@@ -41,7 +41,7 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-19T12:03:08.003Z",
+    "fetchedAt": "2026-04-20T05:29:13.880Z",
     "checksum": "d0ecbe2e6158755f072553023256bd9478a21fe1",
     "extractedFields": {
       "latestTitle": "Codex for (almost) everything",
@@ -52,7 +52,7 @@
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-19T12:03:12.641Z",
+    "fetchedAt": "2026-04-20T05:29:14.636Z",
     "checksum": "9cceb25611aac91c55969aeeb8f88a0ee83a9b4f",
     "extractedFields": {
       "latestTitle": "7 ways to travel smarter this summer, with help from Google",
