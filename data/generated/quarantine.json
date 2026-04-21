@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "id": "upd-2026-04-21-v0-21-1-rc0",
+    "slug": "v0-21-1-rc0-20260421",
+    "entityIds": [
+      "org-ollama"
+    ],
+    "changeType": "release-note",
+    "occurredAt": "2026-04-21T00:42:29.000Z",
+    "detectedAt": "2026-04-21T03:46:06.208Z",
+    "title": "v0.21.1-rc0",
+    "summary": "server: apply format when think=false for gemma4 ( #15678 )",
+    "oldValue": {
+      "latestTitle": "v0.21.0",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.0",
+      "latestPublished": "2026-04-18T01:30:26Z"
+    },
+    "newValue": {
+      "latestTitle": "v0.21.1-rc0",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.1-rc0"
+    },
+    "diff": [
+      {
+        "label": "Latest feed item",
+        "old": "v0.21.0",
+        "new": "v0.21.1-rc0"
+      }
+    ],
+    "confidence": 0.94,
+    "confidenceBadges": [
+      "Official",
+      "Auto-Detected",
+      "High Confidence"
+    ],
+    "sourceIds": [
+      "src-ollama-releases"
+    ],
+    "publishState": "quarantine",
+    "featured": false
+  }
+]
