@@ -30,23 +30,23 @@
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-21T08:08:25.374Z",
-    "checksum": "c6cb40921d2c02ac578c7ffab35b000fa47e4dec",
+    "fetchedAt": "2026-04-21T14:08:48.924Z",
+    "checksum": "97297506d8753de7d52d37df3bed4c866126863a",
     "extractedFields": {
-      "latestTitle": "v0.9.0",
-      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.0",
-      "latestPublished": "2026-04-21T07:57:24Z"
+      "latestTitle": "v0.9.1",
+      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.1",
+      "latestPublished": "2026-04-21T10:45:37Z"
     },
     "rawReference": "https://github.com/open-webui/open-webui/releases.atom"
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-21T05:16:36.488Z",
-    "checksum": "d4fc4d6b1c6fa2ebf9209ec9fbd3fb55afc13b5f",
+    "fetchedAt": "2026-04-21T14:08:47.020Z",
+    "checksum": "c32fec72a7f0011fde0066fbfac20c4247f759f5",
     "extractedFields": {
-      "latestTitle": "OpenAI helps Hyatt advance AI among colleagues",
-      "latestLink": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
-      "latestPublished": "Mon, 20 Apr 2026 00:00:00 GMT"
+      "latestTitle": "Scaling Codex to enterprises worldwide",
+      "latestLink": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
+      "latestPublished": "Tue, 21 Apr 2026 00:00:00 GMT"
     },
     "rawReference": "https://openai.com/news/rss.xml"
   },
