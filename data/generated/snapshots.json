@@ -12,14 +12,14 @@
   },
   {
     "sourceId": "src-anthropic-pricing",
-    "fetchedAt": "2026-04-20T05:29:14.360Z",
+    "fetchedAt": "2026-04-21T05:16:36.880Z",
     "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
     "extractedFields": {},
     "rawReference": "https://www.anthropic.com/pricing"
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-21T03:46:06.208Z",
+    "fetchedAt": "2026-04-21T05:16:37.657Z",
     "checksum": "34dc7af5768f63206f2e297e610dd1ea61239425",
     "extractedFields": {
       "latestTitle": "v0.21.1-rc0",
@@ -30,7 +30,7 @@
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-20T05:29:15.956Z",
+    "fetchedAt": "2026-04-21T05:16:38.483Z",
     "checksum": "a25d0a3f215b841d22e6bf34ebc4b406684883d9",
     "extractedFields": {
       "latestTitle": "v0.8.12",
@@ -41,7 +41,7 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-20T14:12:33.880Z",
+    "fetchedAt": "2026-04-21T05:16:36.488Z",
     "checksum": "d4fc4d6b1c6fa2ebf9209ec9fbd3fb55afc13b5f",
     "extractedFields": {
       "latestTitle": "OpenAI helps Hyatt advance AI among colleagues",
@@ -52,7 +52,7 @@
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-20T05:29:14.636Z",
+    "fetchedAt": "2026-04-21T05:16:37.244Z",
     "checksum": "9cceb25611aac91c55969aeeb8f88a0ee83a9b4f",
     "extractedFields": {
       "latestTitle": "7 ways to travel smarter this summer, with help from Google",
