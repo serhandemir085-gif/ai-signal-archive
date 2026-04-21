@@ -30,12 +30,12 @@
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-21T05:16:38.483Z",
-    "checksum": "a25d0a3f215b841d22e6bf34ebc4b406684883d9",
+    "fetchedAt": "2026-04-21T08:08:25.374Z",
+    "checksum": "c6cb40921d2c02ac578c7ffab35b000fa47e4dec",
     "extractedFields": {
-      "latestTitle": "v0.8.12",
-      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.8.12",
-      "latestPublished": "2026-03-27T00:26:52Z"
+      "latestTitle": "v0.9.0",
+      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.0",
+      "latestPublished": "2026-04-21T07:57:24Z"
     },
     "rawReference": "https://github.com/open-webui/open-webui/releases.atom"
   },
