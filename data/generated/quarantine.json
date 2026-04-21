@@ -1,77 +1,38 @@
 [
   {
-    "id": "upd-2026-04-21-scaling-codex-to-enterprises-worldwide",
-    "slug": "scaling-codex-to-enterprises-worldwide-20260421",
+    "id": "upd-2026-04-21-3-new-ways-ads-advisor-is-making-google-ads-safer-and-faster",
+    "slug": "3-new-ways-ads-advisor-is-making-google-ads-safer-and-faster-20260421",
     "entityIds": [
-      "org-openai"
+      "org-google-ai"
     ],
     "changeType": "feature",
-    "occurredAt": "2026-04-21T00:00:00.000Z",
-    "detectedAt": "2026-04-21T14:08:47.021Z",
-    "title": "Scaling Codex to enterprises worldwide",
-    "summary": "OpenAI launches Codex Transformation Partners, a program with Accenture, PwC, Infosys, and others to help enterprises deploy and scale Codex across the software development lifecycle.",
+    "occurredAt": "2026-04-21T14:30:00.000Z",
+    "detectedAt": "2026-04-21T16:20:40.019Z",
+    "title": "3 new ways Ads Advisor is making Google Ads safer and faster",
+    "summary": "Three new agentic safety and policy features integrated into Ads Advisor will help protect and streamline your Google Ads account.",
     "oldValue": {
-      "latestTitle": "OpenAI helps Hyatt advance AI among colleagues",
-      "latestLink": "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise",
-      "latestPublished": "Mon, 20 Apr 2026 00:00:00 GMT"
+      "latestTitle": "7 ways to travel smarter this summer, with help from Google",
+      "latestLink": "https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/",
+      "latestPublished": "Fri, 17 Apr 2026 14:00:00 +0000"
     },
     "newValue": {
-      "latestTitle": "Scaling Codex to enterprises worldwide",
-      "latestLink": "https://openai.com/index/scaling-codex-to-enterprises-worldwide"
+      "latestTitle": "3 new ways Ads Advisor is making Google Ads safer and faster",
+      "latestLink": "https://blog.google/products/ads-commerce/ads-advisor-google-ads/"
     },
     "diff": [
       {
         "label": "Latest feed item",
-        "old": "OpenAI helps Hyatt advance AI among colleagues",
-        "new": "Scaling Codex to enterprises worldwide"
+        "old": "7 ways to travel smarter this summer, with help from Google",
+        "new": "3 new ways Ads Advisor is making Google Ads safer and faster"
       }
     ],
-    "confidence": 0.92,
+    "confidence": 0.9,
     "confidenceBadges": [
       "Official",
       "Auto-Detected"
     ],
     "sourceIds": [
-      "src-openai-news"
-    ],
-    "publishState": "quarantine",
-    "featured": false
-  },
-  {
-    "id": "upd-2026-04-21-v0-9-1",
-    "slug": "v0-9-1-20260421",
-    "entityIds": [
-      "org-open-webui"
-    ],
-    "changeType": "release-note",
-    "occurredAt": "2026-04-21T10:45:37.000Z",
-    "detectedAt": "2026-04-21T14:08:48.924Z",
-    "title": "v0.9.1",
-    "summary": "Fixed 🐛 Missing aiosqlite dependency. Fixed a startup crash ( ModuleNotFoundError: No module named 'aiosqlite' ) when installing Open WebUI via pip or uv by adding the missing aiosqlite package to p…",
-    "oldValue": {
-      "latestTitle": "v0.9.0",
-      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.0",
-      "latestPublished": "2026-04-21T07:57:24Z"
-    },
-    "newValue": {
-      "latestTitle": "v0.9.1",
-      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.1"
-    },
-    "diff": [
-      {
-        "label": "Latest feed item",
-        "old": "v0.9.0",
-        "new": "v0.9.1"
-      }
-    ],
-    "confidence": 0.94,
-    "confidenceBadges": [
-      "Official",
-      "Auto-Detected",
-      "High Confidence"
-    ],
-    "sourceIds": [
-      "src-open-webui-releases"
+      "src-google-ai-blog"
     ],
     "publishState": "quarantine",
     "featured": false
