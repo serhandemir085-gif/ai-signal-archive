@@ -19,12 +19,12 @@
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-21T05:16:37.657Z",
-    "checksum": "34dc7af5768f63206f2e297e610dd1ea61239425",
+    "fetchedAt": "2026-04-22T03:42:50.600Z",
+    "checksum": "87a4efee037a05562287c1777e0d2b0747d3006d",
     "extractedFields": {
-      "latestTitle": "v0.21.1-rc0",
-      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.1-rc0",
-      "latestPublished": "2026-04-21T00:42:29Z"
+      "latestTitle": "v0.21.1",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.1",
+      "latestPublished": "2026-04-22T02:49:20Z"
     },
     "rawReference": "https://github.com/ollama/ollama/releases.atom"
   },
