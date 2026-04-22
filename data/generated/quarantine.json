@@ -1,29 +1,29 @@
 [
   {
-    "id": "upd-2026-04-22-speeding-up-agentic-workflows-with-websockets-in-the-responses-api",
-    "slug": "speeding-up-agentic-workflows-with-websockets-in-the-responses-api-20260422",
+    "id": "upd-2026-04-22-workspace-agents",
+    "slug": "workspace-agents-20260422",
     "entityIds": [
       "org-openai"
     ],
     "changeType": "feature",
     "occurredAt": "2026-04-22T10:00:00.000Z",
-    "detectedAt": "2026-04-22T16:19:12.919Z",
-    "title": "Speeding up agentic workflows with WebSockets in the Responses API",
-    "summary": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency.",
+    "detectedAt": "2026-04-22T19:38:47.957Z",
+    "title": "Workspace agents",
+    "summary": "Learn how to build, use, and scale workspace agents in ChatGPT to automate repeatable workflows, connect tools, and streamline team operations.",
     "oldValue": {
-      "latestTitle": "Scaling Codex to enterprises worldwide",
-      "latestLink": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
-      "latestPublished": "Tue, 21 Apr 2026 00:00:00 GMT"
+      "latestTitle": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "latestLink": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "latestPublished": "Wed, 22 Apr 2026 10:00:00 GMT"
     },
     "newValue": {
-      "latestTitle": "Speeding up agentic workflows with WebSockets in the Responses API",
-      "latestLink": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets"
+      "latestTitle": "Workspace agents",
+      "latestLink": "https://openai.com/academy/workspace-agents"
     },
     "diff": [
       {
         "label": "Latest feed item",
-        "old": "Scaling Codex to enterprises worldwide",
-        "new": "Speeding up agentic workflows with WebSockets in the Responses API"
+        "old": "Speeding up agentic workflows with WebSockets in the Responses API",
+        "new": "Workspace agents"
       }
     ],
     "confidence": 0.92,
