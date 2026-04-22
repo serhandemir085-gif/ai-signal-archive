@@ -12,14 +12,14 @@
   },
   {
     "sourceId": "src-anthropic-pricing",
-    "fetchedAt": "2026-04-21T05:16:36.880Z",
+    "fetchedAt": "2026-04-22T05:14:37.808Z",
     "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
     "extractedFields": {},
     "rawReference": "https://www.anthropic.com/pricing"
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-22T03:42:50.600Z",
+    "fetchedAt": "2026-04-22T05:14:38.471Z",
     "checksum": "87a4efee037a05562287c1777e0d2b0747d3006d",
     "extractedFields": {
       "latestTitle": "v0.21.1",
@@ -30,7 +30,7 @@
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-21T14:08:48.924Z",
+    "fetchedAt": "2026-04-22T05:14:39.236Z",
     "checksum": "97297506d8753de7d52d37df3bed4c866126863a",
     "extractedFields": {
       "latestTitle": "v0.9.1",
@@ -41,7 +41,7 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-21T14:08:47.020Z",
+    "fetchedAt": "2026-04-22T05:14:37.570Z",
     "checksum": "c32fec72a7f0011fde0066fbfac20c4247f759f5",
     "extractedFields": {
       "latestTitle": "Scaling Codex to enterprises worldwide",
@@ -52,7 +52,7 @@
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-21T16:20:40.019Z",
+    "fetchedAt": "2026-04-22T05:14:37.972Z",
     "checksum": "be4692cb1884e6ea4586f4b055d80131373769f1",
     "extractedFields": {
       "latestTitle": "3 new ways Ads Advisor is making Google Ads safer and faster",
