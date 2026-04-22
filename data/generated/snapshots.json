@@ -41,12 +41,12 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-22T05:14:37.570Z",
-    "checksum": "c32fec72a7f0011fde0066fbfac20c4247f759f5",
+    "fetchedAt": "2026-04-22T16:19:12.918Z",
+    "checksum": "31b576883931918ac73a6ea257b3cb47da7e189e",
     "extractedFields": {
-      "latestTitle": "Scaling Codex to enterprises worldwide",
-      "latestLink": "https://openai.com/index/scaling-codex-to-enterprises-worldwide",
-      "latestPublished": "Tue, 21 Apr 2026 00:00:00 GMT"
+      "latestTitle": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "latestLink": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "latestPublished": "Wed, 22 Apr 2026 10:00:00 GMT"
     },
     "rawReference": "https://openai.com/news/rss.xml"
   },
