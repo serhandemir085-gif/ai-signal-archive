@@ -52,12 +52,12 @@
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-22T05:14:37.972Z",
-    "checksum": "be4692cb1884e6ea4586f4b055d80131373769f1",
+    "fetchedAt": "2026-04-22T14:09:24.605Z",
+    "checksum": "41a3bea089297e338c2ab710ffecdada77ddaeb3",
     "extractedFields": {
-      "latestTitle": "3 new ways Ads Advisor is making Google Ads safer and faster",
-      "latestLink": "https://blog.google/products/ads-commerce/ads-advisor-google-ads/",
-      "latestPublished": "Tue, 21 Apr 2026 14:30:00 +0000"
+      "latestTitle": "We're launching two specialized TPUs for the agentic era.",
+      "latestLink": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
+      "latestPublished": "Wed, 22 Apr 2026 12:00:00 +0000"
     },
     "rawReference": "https://blog.google/technology/ai/rss/"
   },
