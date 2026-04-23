@@ -41,23 +41,23 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-23T05:17:51.446Z",
-    "checksum": "cf16838cf7b9be9159692bf5366b642dd7e98e7c",
+    "fetchedAt": "2026-04-23T19:41:17.314Z",
+    "checksum": "59404d3f8d16c3e9cfcb4edb17da5ce0a2d67377",
     "extractedFields": {
-      "latestTitle": "Making ChatGPT better for clinicians",
-      "latestLink": "https://openai.com/index/making-chatgpt-better-for-clinicians",
-      "latestPublished": "Wed, 22 Apr 2026 15:00:00 GMT"
+      "latestTitle": "Introducing GPT-5.5",
+      "latestLink": "https://openai.com/index/introducing-gpt-5-5",
+      "latestPublished": "Thu, 23 Apr 2026 11:00:00 GMT"
     },
     "rawReference": "https://openai.com/news/rss.xml"
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-23T10:47:23.750Z",
-    "checksum": "72ec11ff7bc478cac2062904fdf6f94841fb3da0",
+    "fetchedAt": "2026-04-23T19:41:18.041Z",
+    "checksum": "48c42fd3a2c3eb3e20f337d3e43e27a378069253",
     "extractedFields": {
-      "latestTitle": "Elevating Austria: Google invests in its first data center in the Alps.",
-      "latestLink": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/",
-      "latestPublished": "Thu, 23 Apr 2026 09:00:00 +0000"
+      "latestTitle": "Here’s how our TPUs power increasingly demanding AI workloads.",
+      "latestLink": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
+      "latestPublished": "Thu, 23 Apr 2026 12:00:00 +0000"
     },
     "rawReference": "https://blog.google/technology/ai/rss/"
   },
