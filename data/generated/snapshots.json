@@ -19,12 +19,12 @@
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-22T19:38:49.458Z",
-    "checksum": "703ca81ac5471071c90d531d994fbdb3a291914f",
+    "fetchedAt": "2026-04-23T03:47:17.516Z",
+    "checksum": "9a5346cbfa705900b66048099a49e4d2224a64f6",
     "extractedFields": {
-      "latestTitle": "v0.21.1",
-      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.1",
-      "latestPublished": "2026-04-22T18:32:50Z"
+      "latestTitle": "v0.21.2",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.2-rc0",
+      "latestPublished": "2026-04-23T02:29:24Z"
     },
     "rawReference": "https://github.com/ollama/ollama/releases.atom"
   },
@@ -41,12 +41,12 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-22T19:38:47.956Z",
-    "checksum": "a8dd0d3ceb4f62430eaa2e0eed391f27a11401ff",
+    "fetchedAt": "2026-04-23T03:47:16.300Z",
+    "checksum": "cf16838cf7b9be9159692bf5366b642dd7e98e7c",
     "extractedFields": {
-      "latestTitle": "Workspace agents",
-      "latestLink": "https://openai.com/academy/workspace-agents",
-      "latestPublished": "Wed, 22 Apr 2026 10:00:00 GMT"
+      "latestTitle": "Making ChatGPT better for clinicians",
+      "latestLink": "https://openai.com/index/making-chatgpt-better-for-clinicians",
+      "latestPublished": "Wed, 22 Apr 2026 15:00:00 GMT"
     },
     "rawReference": "https://openai.com/news/rss.xml"
   },
