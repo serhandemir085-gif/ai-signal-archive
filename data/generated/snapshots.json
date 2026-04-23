@@ -41,11 +41,11 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-23T19:41:17.314Z",
-    "checksum": "59404d3f8d16c3e9cfcb4edb17da5ce0a2d67377",
+    "fetchedAt": "2026-04-23T22:03:23.501Z",
+    "checksum": "3b0b43db769935d4fe1a086f962461e2741c7210",
     "extractedFields": {
-      "latestTitle": "Introducing GPT-5.5",
-      "latestLink": "https://openai.com/index/introducing-gpt-5-5",
+      "latestTitle": "GPT-5.5 System Card",
+      "latestLink": "https://openai.com/index/gpt-5-5-system-card",
       "latestPublished": "Thu, 23 Apr 2026 11:00:00 GMT"
     },
     "rawReference": "https://openai.com/news/rss.xml"

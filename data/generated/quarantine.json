@@ -1,29 +1,29 @@
 [
   {
-    "id": "upd-2026-04-23-introducing-gpt-5-5",
-    "slug": "introducing-gpt-5-5-20260423",
+    "id": "upd-2026-04-23-gpt-5-5-system-card",
+    "slug": "gpt-5-5-system-card-20260423",
     "entityIds": [
       "org-openai"
     ],
     "changeType": "feature",
     "occurredAt": "2026-04-23T11:00:00.000Z",
-    "detectedAt": "2026-04-23T19:41:17.315Z",
-    "title": "Introducing GPT-5.5",
-    "summary": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.",
+    "detectedAt": "2026-04-23T22:03:23.508Z",
+    "title": "GPT-5.5 System Card",
+    "summary": "Official feed item detected from an allowlisted source.",
     "oldValue": {
-      "latestTitle": "Making ChatGPT better for clinicians",
-      "latestLink": "https://openai.com/index/making-chatgpt-better-for-clinicians",
-      "latestPublished": "Wed, 22 Apr 2026 15:00:00 GMT"
+      "latestTitle": "Introducing GPT-5.5",
+      "latestLink": "https://openai.com/index/introducing-gpt-5-5",
+      "latestPublished": "Thu, 23 Apr 2026 11:00:00 GMT"
     },
     "newValue": {
-      "latestTitle": "Introducing GPT-5.5",
-      "latestLink": "https://openai.com/index/introducing-gpt-5-5"
+      "latestTitle": "GPT-5.5 System Card",
+      "latestLink": "https://openai.com/index/gpt-5-5-system-card"
     },
     "diff": [
       {
         "label": "Latest feed item",
-        "old": "Making ChatGPT better for clinicians",
-        "new": "Introducing GPT-5.5"
+        "old": "Introducing GPT-5.5",
+        "new": "GPT-5.5 System Card"
       }
     ],
     "confidence": 0.92,
@@ -33,44 +33,6 @@
     ],
     "sourceIds": [
       "src-openai-news"
-    ],
-    "publishState": "quarantine",
-    "featured": false
-  },
-  {
-    "id": "upd-2026-04-23-here-s-how-our-tpus-power-increasingly-demanding-ai-workloads",
-    "slug": "here-s-how-our-tpus-power-increasingly-demanding-ai-workloads-20260423",
-    "entityIds": [
-      "org-google-ai"
-    ],
-    "changeType": "feature",
-    "occurredAt": "2026-04-23T12:00:00.000Z",
-    "detectedAt": "2026-04-23T19:41:18.041Z",
-    "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
-    "summary": "Learn how Google’s TPUs power increasingly demanding AI workloads with this new video.",
-    "oldValue": {
-      "latestTitle": "Elevating Austria: Google invests in its first data center in the Alps.",
-      "latestLink": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/",
-      "latestPublished": "Thu, 23 Apr 2026 09:00:00 +0000"
-    },
-    "newValue": {
-      "latestTitle": "Here’s how our TPUs power increasingly demanding AI workloads.",
-      "latestLink": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/"
-    },
-    "diff": [
-      {
-        "label": "Latest feed item",
-        "old": "Elevating Austria: Google invests in its first data center in the Alps.",
-        "new": "Here’s how our TPUs power increasingly demanding AI workloads."
-      }
-    ],
-    "confidence": 0.9,
-    "confidenceBadges": [
-      "Official",
-      "Auto-Detected"
-    ],
-    "sourceIds": [
-      "src-google-ai-blog"
     ],
     "publishState": "quarantine",
     "featured": false
