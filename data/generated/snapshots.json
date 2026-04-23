@@ -12,14 +12,14 @@
   },
   {
     "sourceId": "src-anthropic-pricing",
-    "fetchedAt": "2026-04-22T05:14:37.808Z",
+    "fetchedAt": "2026-04-23T05:17:51.968Z",
     "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
     "extractedFields": {},
     "rawReference": "https://www.anthropic.com/pricing"
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-23T03:47:17.516Z",
+    "fetchedAt": "2026-04-23T05:17:53.111Z",
     "checksum": "9a5346cbfa705900b66048099a49e4d2224a64f6",
     "extractedFields": {
       "latestTitle": "v0.21.2",
@@ -30,7 +30,7 @@
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-22T05:14:39.236Z",
+    "fetchedAt": "2026-04-23T05:17:54.329Z",
     "checksum": "97297506d8753de7d52d37df3bed4c866126863a",
     "extractedFields": {
       "latestTitle": "v0.9.1",
@@ -41,7 +41,7 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-23T03:47:16.300Z",
+    "fetchedAt": "2026-04-23T05:17:51.446Z",
     "checksum": "cf16838cf7b9be9159692bf5366b642dd7e98e7c",
     "extractedFields": {
       "latestTitle": "Making ChatGPT better for clinicians",
@@ -52,7 +52,7 @@
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-22T14:09:24.605Z",
+    "fetchedAt": "2026-04-23T05:17:52.462Z",
     "checksum": "41a3bea089297e338c2ab710ffecdada77ddaeb3",
     "extractedFields": {
       "latestTitle": "We're launching two specialized TPUs for the agentic era.",
