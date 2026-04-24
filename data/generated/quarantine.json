@@ -1,29 +1,29 @@
 [
   {
-    "id": "upd-2026-04-23-gpt-5-5-system-card",
-    "slug": "gpt-5-5-system-card-20260423",
+    "id": "upd-2026-04-23-introducing-gpt-5-5",
+    "slug": "introducing-gpt-5-5-20260423",
     "entityIds": [
       "org-openai"
     ],
     "changeType": "feature",
     "occurredAt": "2026-04-23T11:00:00.000Z",
-    "detectedAt": "2026-04-23T22:03:23.508Z",
-    "title": "GPT-5.5 System Card",
-    "summary": "Official feed item detected from an allowlisted source.",
+    "detectedAt": "2026-04-24T03:51:05.581Z",
+    "title": "Introducing GPT-5.5",
+    "summary": "Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.",
     "oldValue": {
-      "latestTitle": "Introducing GPT-5.5",
-      "latestLink": "https://openai.com/index/introducing-gpt-5-5",
+      "latestTitle": "GPT-5.5 System Card",
+      "latestLink": "https://openai.com/index/gpt-5-5-system-card",
       "latestPublished": "Thu, 23 Apr 2026 11:00:00 GMT"
     },
     "newValue": {
-      "latestTitle": "GPT-5.5 System Card",
-      "latestLink": "https://openai.com/index/gpt-5-5-system-card"
+      "latestTitle": "Introducing GPT-5.5",
+      "latestLink": "https://openai.com/index/introducing-gpt-5-5"
     },
     "diff": [
       {
         "label": "Latest feed item",
-        "old": "Introducing GPT-5.5",
-        "new": "GPT-5.5 System Card"
+        "old": "GPT-5.5 System Card",
+        "new": "Introducing GPT-5.5"
       }
     ],
     "confidence": 0.92,
@@ -33,6 +33,45 @@
     ],
     "sourceIds": [
       "src-openai-news"
+    ],
+    "publishState": "quarantine",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-24-v0-21-2",
+    "slug": "v0-21-2-20260424",
+    "entityIds": [
+      "org-ollama"
+    ],
+    "changeType": "release-note",
+    "occurredAt": "2026-04-24T02:42:49.000Z",
+    "detectedAt": "2026-04-24T03:51:06.588Z",
+    "title": "v0.21.2",
+    "summary": "What's Changed docs: Structured outputs and ollama cloud by @madflow in #15733 launch: use bundled OpenClaw ollama web search by @ParthSareen in #15757 New Contributors @madflow made their first cont…",
+    "oldValue": {
+      "latestTitle": "v0.21.2",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.2-rc0",
+      "latestPublished": "2026-04-23T02:29:24Z"
+    },
+    "newValue": {
+      "latestTitle": "v0.21.2",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.2"
+    },
+    "diff": [
+      {
+        "label": "Latest feed item",
+        "old": "v0.21.2",
+        "new": "v0.21.2"
+      }
+    ],
+    "confidence": 0.94,
+    "confidenceBadges": [
+      "Official",
+      "Auto-Detected",
+      "High Confidence"
+    ],
+    "sourceIds": [
+      "src-ollama-releases"
     ],
     "publishState": "quarantine",
     "featured": false

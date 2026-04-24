@@ -19,12 +19,12 @@
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-23T05:17:53.111Z",
-    "checksum": "9a5346cbfa705900b66048099a49e4d2224a64f6",
+    "fetchedAt": "2026-04-24T03:51:06.588Z",
+    "checksum": "d50eec1ee5dba3a257758c4c7ddb89d5fd60b417",
     "extractedFields": {
       "latestTitle": "v0.21.2",
-      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.2-rc0",
-      "latestPublished": "2026-04-23T02:29:24Z"
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.2",
+      "latestPublished": "2026-04-24T02:42:49Z"
     },
     "rawReference": "https://github.com/ollama/ollama/releases.atom"
   },
@@ -41,11 +41,11 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-23T22:03:23.501Z",
-    "checksum": "3b0b43db769935d4fe1a086f962461e2741c7210",
+    "fetchedAt": "2026-04-24T03:51:05.580Z",
+    "checksum": "59404d3f8d16c3e9cfcb4edb17da5ce0a2d67377",
     "extractedFields": {
-      "latestTitle": "GPT-5.5 System Card",
-      "latestLink": "https://openai.com/index/gpt-5-5-system-card",
+      "latestTitle": "Introducing GPT-5.5",
+      "latestLink": "https://openai.com/index/introducing-gpt-5-5",
       "latestPublished": "Thu, 23 Apr 2026 11:00:00 GMT"
     },
     "rawReference": "https://openai.com/news/rss.xml"
