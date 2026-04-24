@@ -12,25 +12,25 @@
   },
   {
     "sourceId": "src-anthropic-pricing",
-    "fetchedAt": "2026-04-23T05:17:51.968Z",
+    "fetchedAt": "2026-04-24T05:23:55.599Z",
     "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
     "extractedFields": {},
     "rawReference": "https://www.anthropic.com/pricing"
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-24T03:51:06.588Z",
-    "checksum": "d50eec1ee5dba3a257758c4c7ddb89d5fd60b417",
+    "fetchedAt": "2026-04-24T05:23:56.256Z",
+    "checksum": "366ddfe6139ce27c94c3c6b825a43742bb592fdc",
     "extractedFields": {
       "latestTitle": "v0.21.2",
       "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.2",
-      "latestPublished": "2026-04-24T02:42:49Z"
+      "latestPublished": "2026-04-24T04:25:16Z"
     },
     "rawReference": "https://github.com/ollama/ollama/releases.atom"
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-23T05:17:54.329Z",
+    "fetchedAt": "2026-04-24T05:23:56.983Z",
     "checksum": "97297506d8753de7d52d37df3bed4c866126863a",
     "extractedFields": {
       "latestTitle": "v0.9.1",
@@ -41,7 +41,7 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-24T03:51:05.580Z",
+    "fetchedAt": "2026-04-24T05:23:55.310Z",
     "checksum": "59404d3f8d16c3e9cfcb4edb17da5ce0a2d67377",
     "extractedFields": {
       "latestTitle": "Introducing GPT-5.5",
@@ -52,7 +52,7 @@
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-23T19:41:18.041Z",
+    "fetchedAt": "2026-04-24T05:23:55.847Z",
     "checksum": "48c42fd3a2c3eb3e20f337d3e43e27a378069253",
     "extractedFields": {
       "latestTitle": "Here’s how our TPUs power increasingly demanding AI workloads.",
