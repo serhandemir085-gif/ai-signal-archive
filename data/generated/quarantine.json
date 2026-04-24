@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "id": "upd-2026-04-24-v0-21-3-rc0",
+    "slug": "v0-21-3-rc0-20260424",
+    "entityIds": [
+      "org-ollama"
+    ],
+    "changeType": "release-note",
+    "occurredAt": "2026-04-24T09:49:36.000Z",
+    "detectedAt": "2026-04-24T10:44:52.257Z",
+    "title": "v0.21.3-rc0",
+    "summary": "openai: map responses reasoning effort to think ( #15789 )",
+    "oldValue": {
+      "latestTitle": "v0.21.2",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.2",
+      "latestPublished": "2026-04-24T04:25:16Z"
+    },
+    "newValue": {
+      "latestTitle": "v0.21.3-rc0",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.3-rc0"
+    },
+    "diff": [
+      {
+        "label": "Latest feed item",
+        "old": "v0.21.2",
+        "new": "v0.21.3-rc0"
+      }
+    ],
+    "confidence": 0.94,
+    "confidenceBadges": [
+      "Official",
+      "Auto-Detected",
+      "High Confidence"
+    ],
+    "sourceIds": [
+      "src-ollama-releases"
+    ],
+    "publishState": "quarantine",
+    "featured": false
+  },
+  {
+    "id": "upd-2026-04-24-v0-9-2",
+    "slug": "v0-9-2-20260424",
+    "entityIds": [
+      "org-open-webui"
+    ],
+    "changeType": "release-note",
+    "occurredAt": "2026-04-24T09:56:14.000Z",
+    "detectedAt": "2026-04-24T10:44:52.922Z",
+    "title": "v0.9.2",
+    "summary": "Added 🧠 PaddleOCR-vl document extraction. Administrators can now use PaddleOCR-vl as a content extraction engine for document processing, with configurable API URL and token settings in document ret…",
+    "oldValue": {
+      "latestTitle": "v0.9.1",
+      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.1",
+      "latestPublished": "2026-04-21T10:45:37Z"
+    },
+    "newValue": {
+      "latestTitle": "v0.9.2",
+      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.2"
+    },
+    "diff": [
+      {
+        "label": "Latest feed item",
+        "old": "v0.9.1",
+        "new": "v0.9.2"
+      }
+    ],
+    "confidence": 0.94,
+    "confidenceBadges": [
+      "Official",
+      "Auto-Detected",
+      "High Confidence"
+    ],
+    "sourceIds": [
+      "src-open-webui-releases"
+    ],
+    "publishState": "quarantine",
+    "featured": false
+  }
+]

@@ -19,23 +19,23 @@
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-24T05:23:56.256Z",
-    "checksum": "366ddfe6139ce27c94c3c6b825a43742bb592fdc",
+    "fetchedAt": "2026-04-24T10:44:52.256Z",
+    "checksum": "d36d433435569b434fa21498ef5fdf140b2ae484",
     "extractedFields": {
-      "latestTitle": "v0.21.2",
-      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.2",
-      "latestPublished": "2026-04-24T04:25:16Z"
+      "latestTitle": "v0.21.3-rc0",
+      "latestLink": "https://github.com/ollama/ollama/releases/tag/v0.21.3-rc0",
+      "latestPublished": "2026-04-24T09:49:36Z"
     },
     "rawReference": "https://github.com/ollama/ollama/releases.atom"
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-24T05:23:56.983Z",
-    "checksum": "97297506d8753de7d52d37df3bed4c866126863a",
+    "fetchedAt": "2026-04-24T10:44:52.922Z",
+    "checksum": "30d26db86e8dfabefc9f30154843cc05d91e81f8",
     "extractedFields": {
-      "latestTitle": "v0.9.1",
-      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.1",
-      "latestPublished": "2026-04-21T10:45:37Z"
+      "latestTitle": "v0.9.2",
+      "latestLink": "https://github.com/open-webui/open-webui/releases/tag/v0.9.2",
+      "latestPublished": "2026-04-24T09:56:14Z"
     },
     "rawReference": "https://github.com/open-webui/open-webui/releases.atom"
   },
