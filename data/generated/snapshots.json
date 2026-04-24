@@ -52,12 +52,12 @@
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-24T05:23:55.847Z",
-    "checksum": "48c42fd3a2c3eb3e20f337d3e43e27a378069253",
+    "fetchedAt": "2026-04-24T19:13:27.864Z",
+    "checksum": "8abc0e8c4639ce81f24d38df43954caf90c0ec1c",
     "extractedFields": {
-      "latestTitle": "Here’s how our TPUs power increasingly demanding AI workloads.",
-      "latestLink": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
-      "latestPublished": "Thu, 23 Apr 2026 12:00:00 +0000"
+      "latestTitle": "8 Gemini tips for organizing your space (and life)",
+      "latestLink": "https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
+      "latestPublished": "Fri, 24 Apr 2026 19:00:00 +0000"
     },
     "rawReference": "https://blog.google/technology/ai/rss/"
   },
