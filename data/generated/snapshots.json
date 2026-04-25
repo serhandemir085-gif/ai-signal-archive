@@ -12,14 +12,14 @@
   },
   {
     "sourceId": "src-anthropic-pricing",
-    "fetchedAt": "2026-04-24T05:23:55.599Z",
+    "fetchedAt": "2026-04-25T05:02:06.639Z",
     "checksum": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f",
     "extractedFields": {},
     "rawReference": "https://www.anthropic.com/pricing"
   },
   {
     "sourceId": "src-ollama-releases",
-    "fetchedAt": "2026-04-24T14:07:53.328Z",
+    "fetchedAt": "2026-04-25T05:02:07.328Z",
     "checksum": "4aa152c3c53bd6ba9aef7092fe9dd076d1b4f741",
     "extractedFields": {
       "latestTitle": "v0.21.3",
@@ -30,7 +30,7 @@
   },
   {
     "sourceId": "src-open-webui-releases",
-    "fetchedAt": "2026-04-24T10:44:52.922Z",
+    "fetchedAt": "2026-04-25T05:02:08.282Z",
     "checksum": "30d26db86e8dfabefc9f30154843cc05d91e81f8",
     "extractedFields": {
       "latestTitle": "v0.9.2",
@@ -41,7 +41,7 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-24T05:23:55.310Z",
+    "fetchedAt": "2026-04-25T05:02:06.362Z",
     "checksum": "59404d3f8d16c3e9cfcb4edb17da5ce0a2d67377",
     "extractedFields": {
       "latestTitle": "Introducing GPT-5.5",
@@ -52,7 +52,7 @@
   },
   {
     "sourceId": "src-google-ai-blog",
-    "fetchedAt": "2026-04-24T19:13:27.864Z",
+    "fetchedAt": "2026-04-25T05:02:06.893Z",
     "checksum": "8abc0e8c4639ce81f24d38df43954caf90c0ec1c",
     "extractedFields": {
       "latestTitle": "8 Gemini tips for organizing your space (and life)",
