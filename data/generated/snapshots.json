@@ -41,12 +41,12 @@
   },
   {
     "sourceId": "src-openai-news",
-    "fetchedAt": "2026-04-26T05:27:36.097Z",
-    "checksum": "59404d3f8d16c3e9cfcb4edb17da5ce0a2d67377",
+    "fetchedAt": "2026-04-27T04:00:09.637Z",
+    "checksum": "5c54c47b1b9bc7c9f953f31fd200edf839251685",
     "extractedFields": {
-      "latestTitle": "Introducing GPT-5.5",
-      "latestLink": "https://openai.com/index/introducing-gpt-5-5",
-      "latestPublished": "Thu, 23 Apr 2026 11:00:00 GMT"
+      "latestTitle": "Our principles",
+      "latestLink": "https://openai.com/index/our-principles",
+      "latestPublished": "Sun, 26 Apr 2026 16:00:00 GMT"
     },
     "rawReference": "https://openai.com/news/rss.xml"
   },

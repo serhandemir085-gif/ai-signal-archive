@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "id": "upd-2026-04-26-our-principles",
+    "slug": "our-principles-20260426",
+    "entityIds": [
+      "org-openai"
+    ],
+    "changeType": "feature",
+    "occurredAt": "2026-04-26T16:00:00.000Z",
+    "detectedAt": "2026-04-27T04:00:09.637Z",
+    "title": "Our principles",
+    "summary": "Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work.",
+    "oldValue": {
+      "latestTitle": "Introducing GPT-5.5",
+      "latestLink": "https://openai.com/index/introducing-gpt-5-5",
+      "latestPublished": "Thu, 23 Apr 2026 11:00:00 GMT"
+    },
+    "newValue": {
+      "latestTitle": "Our principles",
+      "latestLink": "https://openai.com/index/our-principles"
+    },
+    "diff": [
+      {
+        "label": "Latest feed item",
+        "old": "Introducing GPT-5.5",
+        "new": "Our principles"
+      }
+    ],
+    "confidence": 0.92,
+    "confidenceBadges": [
+      "Official",
+      "Auto-Detected"
+    ],
+    "sourceIds": [
+      "src-openai-news"
+    ],
+    "publishState": "quarantine",
+    "featured": false
+  }
+]
